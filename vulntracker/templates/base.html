@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ LANGUAGE_CODE }}" xml:lang="{{ LANGUAGE_CODE }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+<title>{% block title %}{% endblock %}</title>
+<link rel="stylesheet" type="text/css" href="/media/css/grids.css">
+<link rel="stylesheet" type="text/css" href="{% block stylesheet %}/media/css/base.css{% endblock %}" />
+{% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}/media/css/rtl.css{% endblock %}" />{% endif %}
+<link rel="stylesheet" type="text/css" href="/media/css/jquery.autocomplete.css" />
+
+<script type="text/javascript" src="/media/js/jquery-latest.pack.js"></script>
+<script type='text/javascript' src='/media/js/jquery.bgiframe.min.js'></script>
+<script type='text/javascript' src='/media/js/dimensions.js'></script>
+<script type='text/javascript' src='/media/js/jquery.autocomplete.js'></script>
+
+{% block extrastyle %}{% endblock %}
+{% block extrahead %}{% endblock %}
+
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-442422-2");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
+
+<script type="text/javascript">
+$().ready(function() {
+
+    function findValueCallback(event, data, formatted) {
+        $("<li>").text( !data ? "No match!" : "Selected: " + formatted).appendTo("#result");
+    }
+    
+    function formatItem(row) {
+        return row[0];
+    }
+    
+    function formatResult(row) {
+        return row[0];
+    }
+    $("#id_message_search").autocomplete("/messages/autocomplete/", {
+        delay: 150,
+        width: 500,
+        formatItem: formatItem,
+        formatResult: formatResult,
+        selectFirst: false
+    });
+    $(":text, textarea").result(findValueCallback).next().click(function() {
+        $(this).prev().search();
+    });
+    $("#id_message_search").result(function(event, data, formatted) {
+        $(this).find("..+/input").val(data[1]);
+    });
+});
+</script>
+
+</head>
+
+<body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}">
+
+<!-- Container -->
+<div id="doc">
+
+    {% if not is_popup %}
+    <!-- Header -->
+    <div id="hd">
+        <div id="branding">
+        {% block branding %}{% endblock %}
+        </div>
+        <div id="user-tools">
+            &nbsp;
+            {% if user.is_authenticated %}
+            Welcome, <strong>{% if user.first_name %}{{ user.first_name|escape }}{% else %}{{ user.username }}{% endif %}</strong>. {% block userlinks %} <a href="{{ site_root }}accounts/password_change/">Change password</a> / <a href="{{ site_root }}accounts/logout/">Log out</a>{% endblock %}
+            {% else %}
+            Welcome: <strong><a href="{{ site_root }}accounts/login/">Login</a> / <a href="{{ site_root }}accounts/signup/">Register</a></strong>
+            {% endif %}</div>
+        {% block nav %}<div id="nav">
+            <form action="{{ site_root }}messages/results/" method="POST"> 
+                <span id="navsearch"> <label for="id_message_search" class="small"> Advisory Search: </label> <input type="text" name="message_search" id="id_message_search"> </span>
+            </form>
+            <span id="navtabs">
+            <ul>
+                <li id="{% block index_id %}{% endblock %}" style="margin-left: 1px"><a href="{{ site_root }}" title="Home"><span>Home</span></a></li>
+                <li id="{% block about_id %}{% endblock %}"><a href="{{ site_root }}about/" title="about"><span>About</span></a></li>
+                <li id="{% block contact_id %}{% endblock %}"><a href="{{ site_root }}contact/" title="contact"><span>Contact</span></a></li>
+                {% if user.is_authenticated %}
+                <li id="{% block prefs_id %}{% endblock %}"><a href="{{ site_root }}accounts/prefs_{{ criteria_pref_type }}/" title="Preferences"><span>Preferences</span></a></li>
+                <li id="{% block messages_id %}{% endblock %}"><a href="{{ site_root }}accounts/messages/" title="My Advisories"><span>My Advisories</span></a></li>
+                {% endif %}
+            </ul>
+        </span>
+        </div> {% endblock %}
+
+
+    </div>
+    <!-- END Header -->
+    <!--{% block breadcrumbs %}<div class="breadcrumbs"><a href="/">Home</a>{% if title %} &rsaquo; {{ title|escape }}{% endif %}</div>{% endblock %}-->
+    {% endif %}
+
+        {% if messages %}
+        <ul class="messagelist">{% for message in messages %}<li>{{ message|escape }}</li>{% endfor %}</ul>
+        {% endif %}
+
+    <!-- Content -->
+    <div id="bd" class="{% block bodyclasses %}{% endblock %}">
+        {% block pretitle %}{% endblock %}
+        {% block content_title %}{% if title %}<h1>{{ title|escape }}</h1>{% endif %}{% endblock %}
+        {% block content %}
+        {% block object-tools %}{% endblock %}
+        {{ content }}
+        {% endblock %}
+        {% block sidebar %}{% endblock %}
+        <br class="clear" />
+    </div>
+    <!-- END Content -->
+
+    {% block footer %}<div id="ft">(c) 2007 Jon Austin All Rights Reserved </div>{% endblock %}
+</div>
+
+</body>
+</html>

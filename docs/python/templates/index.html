@@ -1,0 +1,51 @@
+{% extends "base_site.html" %}
+
+{% block index_id %}current{% endblock %}
+
+{% block content %}
+
+<div class="center">
+<h2> Welcome to {{ site_name }} </h2>
+
+{% if not user.is_authenticated %}
+<p>
+<a href="{{ site_root }}accounts/login/">Login</a> 
+<span style="margin-left:100px"></span>
+<a href="{{ site_root }}accounts/signup/">Register</a>
+</p>
+{% endif %}
+</div>
+
+<div class="center">  This is <h5 class="blue" style="display:inline"> Beta </h5> software, please use the <a href="{{site_root}}contact">contact</a> page to report any issues you experience </div>
+
+<div style="margin-top: 30px"></div>
+
+<h5 class="center"> Purpose: </h5>
+
+<p>
+This site is meant to be used as a tool for users of open source and sometimes commercial software who must keep constant track of new security bugs as soon as they appear in the wild.
+</p>
+
+<h5 class="center"> Audience: </h5>
+
+<p>
+System Administrators who manage web based software are the primary audience for this tool, although it may be useful for anyone who wishes to keep track of 0-day advisories in their own hosted applications.
+</p>
+
+<div class="center" style="margin-top:50px;">
+{% for source in sources %}
+<span style="padding-right:15px;"> <h5 style="display:inline"><a href="{{site_root}}about/#{{source.anchor}}">{{ source.name }}</a></h5></span>
+
+{% if forloop.counter|divisibleby:3 %} 
+<br />
+{% else %}
+<h5 style="display:inline; padding-right:15px">|</h5>
+{% endif %}
+{% endfor %}
+</div>
+
+<h5 class="center" style="margin-top:50px"> Enjoy! </h5>
+
+<div style="margin: 150px"></div>
+
+{% endblock content %}

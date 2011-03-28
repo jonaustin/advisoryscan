@@ -1,0 +1,67 @@
+<html><head><title>./manage.py</title>
+<!-- html produced by lpy.py, http://www.danbala.com -->
+<!-- this is the standard header -->
+<style>
+<!--
+a:link { color:blue; text-decoration:none }
+a:visited { color:purple; text-decoration:none }
+a:active { color:red; text-decoration:none }
+a:hover { color:red; text-decoration:none }
+-->
+</style>
+<style>
+<--
+H3 {    /* need this for navigator */
+   font: bold 14pt "Verdana", "Arial", "Helvetica" 
+}
+div.code { 
+    background: #e0e0e0;
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+div.doc { 
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+td.doc { 
+    width:600; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+td.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+table.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+td.splitdoc { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+ }
+td.splitcode { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+-->
+</style>
+</head>
+<body><table><tr><td class="doc"><ul><div class="code"><pre><a name="1">   1</a>    <i><font color=green>#!/usr/bin/env python
+</font></i><a name="2">   2</a>    <b>from</b> django.core.management <b>import</b> execute_manager
+<a name="3">   3</a>    <b>try</b>:
+<a name="4">   4</a>        <b>import</b> settings <i><font color=green># Assumed to be in the same directory.</font></i>
+<a name="5">   5</a>    <b>except</b> ImportError:
+<a name="6">   6</a>        <b>import</b> sys
+<a name="7">   7</a>        sys.stderr.write(<font color=darkcyan>"Error: Can't find the file 'settings.py' in the directory containing %r. It appears you've customized things.\nYou'll have to run django-admin.py, passing it your settings module.\n(If the file settings.py does indeed exist, it's causing an ImportError somehow.)\n"</font> % __file__)
+<a name="8">   8</a>        sys.exit(1)
+<a name="9">   9</a>    
+<a name="10">  10</a>    <b>if</b> __name__ == <font color=darkcyan>"__main__"</font>:
+<a name="11">  11</a>        execute_manager(settings)</pre></div></ul></td></tr></table></body></html><hr><ul><table><tr><td valign=top><table><tr><td valign=top class="xref">ImportError</td><td valign=top class="xref"> <a href="#5">5</a> </td></tr>
+<tr><td valign=top class="xref">__file__</td><td valign=top class="xref"> <a href="#7">7</a> </td></tr>
+<tr><td valign=top class="xref">__name__</td><td valign=top class="xref"> <a href="#10">10</a> </td></tr>
+<tr><td valign=top class="xref">core</td><td valign=top class="xref"> <a href="#2">2</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">django</td><td valign=top class="xref"> <a href="#2">2</a> </td></tr>
+<tr><td valign=top class="xref">execute_manager</td><td valign=top class="xref"> <a href="#2">2</a>  <a href="#11">11</a> </td></tr>
+<tr><td valign=top class="xref">exit</td><td valign=top class="xref"> <a href="#8">8</a> </td></tr>
+<tr><td valign=top class="xref">management</td><td valign=top class="xref"> <a href="#2">2</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">settings</td><td valign=top class="xref"> <a href="#4">4</a>  <a href="#11">11</a> </td></tr>
+<tr><td valign=top class="xref">stderr</td><td valign=top class="xref"> <a href="#7">7</a> </td></tr>
+<tr><td valign=top class="xref">sys</td><td valign=top class="xref"> <a href="#6">6</a>  <a href="#7">7</a>  <a href="#8">8</a> </td></tr>
+<tr><td valign=top class="xref">write</td><td valign=top class="xref"> <a href="#7">7</a> </td></tr>
+</table></td></tr></table></ul>

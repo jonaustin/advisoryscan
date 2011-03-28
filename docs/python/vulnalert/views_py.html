@@ -1,0 +1,610 @@
+<html><head><title>./vulnalert/views.py</title>
+<!-- html produced by lpy.py, http://www.danbala.com -->
+<!-- this is the standard header -->
+<style>
+<!--
+a:link { color:blue; text-decoration:none }
+a:visited { color:purple; text-decoration:none }
+a:active { color:red; text-decoration:none }
+a:hover { color:red; text-decoration:none }
+-->
+</style>
+<style>
+<--
+H3 {    /* need this for navigator */
+   font: bold 14pt "Verdana", "Arial", "Helvetica" 
+}
+div.code { 
+    background: #e0e0e0;
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+div.doc { 
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+td.doc { 
+    width:600; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+td.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+table.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+td.splitdoc { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+ }
+td.splitcode { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+-->
+</style>
+</head>
+<body><table><tr><td class="doc"><ul><div class="code"><pre><a name="1">   1</a>    <b>from</b> django.shortcuts <b>import</b> render_to_response, get_object_or_404
+<a name="2">   2</a>    <b>from</b> django.template <b>import</b> RequestContext
+<a name="3">   3</a>    <b>from</b> django.utils <b>import</b> simplejson 
+<a name="4">   4</a>    <b>from</b> django.http <b>import</b> HttpResponse, Http404
+<a name="5">   5</a>    <b>from</b> django.http <b>import</b> HttpResponseRedirect
+<a name="6">   6</a>    <b>from</b> django.contrib.auth <b>import</b> login, logout, authenticate
+<a name="7">   7</a>    <b>from</b> django.contrib.auth.decorators <b>import</b> login_required
+<a name="8">   8</a>    <b>from</b> vulntracker.vulnalert.forms <b>import</b> SignupForm, LoginForm, PreferencesForm, CriteriaFormAdv, CriteriaFormSimple, PasswordChangeForm, PasswordResetForm, ContactForm
+<a name="9">   9</a>    <b>from</b> vulntracker.vulnalert.models <b>import</b> UserCriteria, CriteriaType, CriteriaQualifier, User, Source
+<a name="10">  10</a>    <b>from</b> vulntracker.settings <b>import</b> SIMPLE_CRITERIA_TYPES, SITE_ROOT, SITE_NAME, ADMINS
+<a name="11">  11</a>    
+<a name="12">  12</a>    <b>def</b> index(request, template=<font color=darkcyan>'index.html'</font>):
+<a name="13">  13</a>        response_dict = {}
+<a name="14">  14</a>        sources = Source.objects.all()
+<a name="15">  15</a>        <b>for</b> source <b>in</b> sources:
+<a name="16">  16</a>            source.anchor = source.name.replace(<font color=darkcyan>' '</font>, <font color=darkcyan>'-'</font>)
+<a name="17">  17</a>        response_dict[<font color=darkcyan>'sources'</font>] = sources
+<a name="18">  18</a>        
+<a name="19">  19</a>        <b>return</b> render_to_response(template, response_dict, context_instance=RequestContext(request) )
+<a name="20">  20</a>    
+<a name="21">  21</a>    <b>def</b> about(request, template=<font color=darkcyan>'about.html'</font>):
+<a name="22">  22</a>        response_dict = {}
+<a name="23">  23</a>        sources = Source.objects.all()
+<a name="24">  24</a>        <b>for</b> source <b>in</b> sources:
+<a name="25">  25</a>            source.anchor = source.name.replace(<font color=darkcyan>' '</font>, <font color=darkcyan>'-'</font>)
+<a name="26">  26</a>        response_dict[<font color=darkcyan>'sources'</font>] = sources
+<a name="27">  27</a>        
+<a name="28">  28</a>        <b>return</b> render_to_response(template, response_dict, context_instance=RequestContext(request) )
+<a name="29">  29</a>    
+<a name="30">  30</a>    <b>def</b> contact(request, template=<font color=darkcyan>'contact.html'</font>):
+<a name="31">  31</a>        response_dict = {}
+<a name="32">  32</a>        <b>if</b> request.user.is_authenticated():
+<a name="33">  33</a>            response_dict[<font color=darkcyan>'form_vals'</font>] = {<font color=darkcyan>'name'</font>:request.user.first_name+<font color=darkcyan>' '</font>+request.user.last_name, <font color=darkcyan>'email'</font>:request.user.email}
+<a name="34">  34</a>        <b>if</b> request.method == <font color=darkcyan>"POST"</font>:
+<a name="35">  35</a>            response_dict[<font color=darkcyan>'form'</font>] = ContactForm( data=request.POST )
+<a name="36">  36</a>            <b>if</b> response_dict[<font color=darkcyan>'form'</font>].is_valid():
+<a name="37">  37</a>                response_dict[<font color=darkcyan>'message'</font>] = <font color=darkcyan>"Thank you for your comments!"</font>
+<a name="38">  38</a>    
+<a name="39">  39</a>                email = response_dict[<font color=darkcyan>'form'</font>].clean_data[<font color=darkcyan>'email'</font>]
+<a name="40">  40</a>                name  = response_dict[<font color=darkcyan>'form'</font>].clean_data[<font color=darkcyan>'name'</font>]
+<a name="41">  41</a>                message = response_dict[<font color=darkcyan>'form'</font>].clean_data[<font color=darkcyan>'message'</font>]
+<a name="42">  42</a>    
+<a name="43">  43</a>                <i><font color=green># send email to me
+</font></i><a name="44">  44</a>                admin_email = ADMINS[0][1]
+<a name="45">  45</a>                <b>from</b> django.core.mail <b>import</b> send_mail
+<a name="46">  46</a>                message = <font color=darkcyan>"""From: %s (%s)
+        
+        %s
+                    """</font>
+ % (name, email, message)
+<a name="50">  50</a>    
+<a name="51">  51</a>                send_mail(SITE_NAME+<font color=darkcyan>' Contact Form'</font>, message, email, [admin_email], fail_silently=False)
+<a name="52">  52</a>    
+<a name="53">  53</a>            <b>else</b>:
+<a name="54">  54</a>                <i><font color=green># populate fields
+</font></i><a name="55">  55</a>                response_dict[<font color=darkcyan>'form_vals'</font>] = {}
+<a name="56">  56</a>                <b>for</b> input_name <b>in</b> request.POST.keys():
+<a name="57">  57</a>                    response_dict[<font color=darkcyan>'form_vals'</font>][ input_name ] = request.POST[ input_name ]
+<a name="58">  58</a>        
+<a name="59">  59</a>        <b>return</b> render_to_response(template, response_dict, context_instance=RequestContext(request) )
+<a name="60">  60</a>    
+<a name="61">  61</a>    <b>def</b> signup(request, template=<font color=darkcyan>'signup.html'</font>, login_url=<font color=darkcyan>''</font>):
+<a name="62">  62</a>        <font color=darkcyan>"""
+            Processes original signup to create a user on the site
+            once validated successfully logs the user in and redirects to default user page
+            """</font>
+
+<a name="66">  66</a>        response_dict = {}
+<a name="67">  67</a>        response_dict[<font color=darkcyan>'error_message'</font>] = <font color=darkcyan>''</font>
+<a name="68">  68</a>        response_dict[<font color=darkcyan>'debug'</font>] = <font color=darkcyan>'yes'</font>
+<a name="69">  69</a>        <b>if</b> request.method == <font color=darkcyan>"POST"</font>:
+<a name="70">  70</a>            response_dict[<font color=darkcyan>'form'</font>] = SignupForm(request.POST)
+<a name="71">  71</a>            <b>if</b> <b>not</b> request.session.test_cookie_worked():
+<a name="72">  72</a>                response_dict[<font color=darkcyan>'error_message'</font>] = _(<font color=darkcyan>"Looks like your browser isn't configured to accept cookies. Please enable cookies, reload this page, and try again."</font>)
+<a name="73">  73</a>                request.session.set_test_cookie()
+<a name="74">  74</a>                <b>return</b> render_to_response(template, response_dict)
+<a name="75">  75</a>            <b>elif</b> response_dict[<font color=darkcyan>'form'</font>].is_valid():
+<a name="76">  76</a>                request.session.delete_test_cookie()
+<a name="77">  77</a>                user = response_dict[<font color=darkcyan>'form'</font>].save()
+<a name="78">  78</a>                request.session[<font color=darkcyan>'from_signup'</font>] = <font color=darkcyan>'True'</font>
+<a name="79">  79</a>                <b>return</b> HttpResponseRedirect(login_url)
+<a name="80">  80</a>        <b>else</b>:
+<a name="81">  81</a>            response_dict[<font color=darkcyan>'form'</font>] = SignupForm()
+<a name="82">  82</a>            request.session.set_test_cookie()
+<a name="83">  83</a>        <b>return</b> render_to_response(template, response_dict, context_instance=RequestContext(request) )
+<a name="84">  84</a>    
+<a name="85">  85</a>        
+<a name="86">  86</a>    <b>def</b> login_form(request, template=<font color=darkcyan>'login.html'</font>, next=<font color=darkcyan>''</font>):
+<a name="87">  87</a>        <font color=darkcyan>"""
+            Processes original login to create a user on the site
+            once validated successfully logs the user in and redirects to default user page
+            """</font>
+
+<a name="91">  91</a>        response_dict = {}
+<a name="92">  92</a>        (response_dict[<font color=darkcyan>'message'</font>], response_dict[<font color=darkcyan>'error_message'</font>]) = (<font color=darkcyan>''</font>,<font color=darkcyan>''</font>)
+<a name="93">  93</a>        response_dict[<font color=darkcyan>'debug'</font>] = <font color=darkcyan>'yes'</font>
+<a name="94">  94</a>        next = request.REQUEST.get(<font color=darkcyan>'next'</font>, next)
+<a name="95">  95</a>        <b>if</b> request.method == <font color=darkcyan>"POST"</font>:
+<a name="96">  96</a>            response_dict[<font color=darkcyan>'form'</font>] = LoginForm(request.POST)
+<a name="97">  97</a>            <b>if</b> <b>not</b> request.session.test_cookie_worked():
+<a name="98">  98</a>                response_dict[<font color=darkcyan>'error_message'</font>] = _(<font color=darkcyan>"Looks like your browser isn't configured to accept cookies. Please enable cookies, reload this page, and try again."</font>)
+<a name="99">  99</a>                request.session.set_test_cookie()
+<a name="100"> 100</a>                <b>return</b> render_to_response(template, response_dict)
+<a name="101"> 101</a>            <b>else</b>:
+<a name="102"> 102</a>                is_valid = response_dict[<font color=darkcyan>'form'</font>].is_valid()
+<a name="103"> 103</a>                <b>if</b> is_valid:
+<a name="104"> 104</a>                    data = request.POST.copy()
+<a name="105"> 105</a>                    user = authenticate(username=data[<font color=darkcyan>'username'</font>], password=data[<font color=darkcyan>'password'</font>])
+<a name="106"> 106</a>                    <b>if</b> user:
+<a name="107"> 107</a>                        login( request, user )
+<a name="108"> 108</a>                        user_profile = request.user.get_profile()
+<a name="109"> 109</a>                        criteria_pref_type = user_profile.criteria_pref_type
+<a name="110"> 110</a>                        next = <font color=darkcyan>'../prefs_'</font> + criteria_pref_type + <font color=darkcyan>'/'</font>
+<a name="111"> 111</a>                        <b>return</b> HttpResponseRedirect( next )
+<a name="112"> 112</a>                <b>if</b> <b>not</b> is_valid <b>or</b> <b>not</b> user:
+<a name="113"> 113</a>                    <font color=darkcyan>""" Only return a generic error msg here for security -- otherwise they'd know if username or password was correct """</font>
+<a name="114"> 114</a>                    response_dict[<font color=darkcyan>'error_message'</font>] = _(<font color=darkcyan>"Please enter a correct username and password. Note that both fields are case-sensitive."</font>)
+<a name="115"> 115</a>                
+<a name="116"> 116</a>        <b>else</b>:
+<a name="117"> 117</a>            response_dict[<font color=darkcyan>'form'</font>] = LoginForm()
+<a name="118"> 118</a>        <b>if</b> request.session.get(<font color=darkcyan>'from_signup'</font>, None):
+<a name="119"> 119</a>            <b>del</b> request.session[<font color=darkcyan>'from_signup'</font>]
+<a name="120"> 120</a>            response_dict[<font color=darkcyan>'message'</font>] = <font color=darkcyan>"Signup successful! Please login to continue"</font>
+<a name="121"> 121</a>        request.session.set_test_cookie()
+<a name="122"> 122</a>        <b>return</b> render_to_response(template, response_dict, context_instance=RequestContext(request))
+<a name="123"> 123</a>    
+<a name="124"> 124</a>    @login_required
+<a name="125"> 125</a>    <b>def</b> logout_view(request):
+<a name="126"> 126</a>        logout(request)
+<a name="127"> 127</a>        <b>return</b> HttpResponseRedirect( SITE_ROOT )
+<a name="128"> 128</a>    
+<a name="129"> 129</a>    @login_required
+<a name="130"> 130</a>    <b>def</b> password_change(request, template):
+<a name="131"> 131</a>        response_dict = {}
+<a name="132"> 132</a>        <b>if</b> request.method == <font color=darkcyan>"POST"</font>:
+<a name="133"> 133</a>            response_dict[<font color=darkcyan>'form'</font>] = PasswordChangeForm(data=request.POST, request=request)
+<a name="134"> 134</a>            <b>if</b> response_dict[<font color=darkcyan>'form'</font>].is_valid():
+<a name="135"> 135</a>                request.user.set_password( request.POST[<font color=darkcyan>'password'</font>] )
+<a name="136"> 136</a>                request.user.save()
+<a name="137"> 137</a>                request.user.message_set.create(message=<font color=darkcyan>"Password Updated Successfully!"</font>)
+<a name="138"> 138</a>        <b>return</b> render_to_response(template, response_dict, context_instance=RequestContext(request))
+<a name="139"> 139</a>    
+<a name="140"> 140</a>    <b>def</b> password_reset(request, template):
+<a name="141"> 141</a>        response_dict = {}
+<a name="142"> 142</a>        <b>if</b> request.method == <font color=darkcyan>"POST"</font>:
+<a name="143"> 143</a>            response_dict[<font color=darkcyan>'form'</font>] = PasswordResetForm(data=request.POST)
+<a name="144"> 144</a>            <b>if</b> response_dict[<font color=darkcyan>'form'</font>].is_valid():
+<a name="145"> 145</a>                <b>try</b>:
+<a name="146"> 146</a>                    email = response_dict[<font color=darkcyan>'form'</font>].clean_data[<font color=darkcyan>'email'</font>]
+<a name="147"> 147</a>                    <i><font color=green># set here since for security reasons we don't want to reveal whether they chose an existing email or not
+</font></i><a name="148"> 148</a>                    response_dict[<font color=darkcyan>'message'</font>] = <font color=darkcyan>"Password Reset Successfully for %s!"</font> % email
+<a name="149"> 149</a>                    <i><font color=green># check if this user exists
+</font></i><a name="150"> 150</a>                    user = User.objects.get(email=email)
+<a name="151"> 151</a>    
+<a name="152"> 152</a>                    <i><font color=green># create new random password and set it on user with email=email 
+</font></i><a name="153"> 153</a>                    <b>from</b> vulntracker.vulnalert.util <b>import</b> nicepass
+<a name="154"> 154</a>                    new_password = nicepass()
+<a name="155"> 155</a>                    user.set_password( new_password )
+<a name="156"> 156</a>                    user.save()
+<a name="157"> 157</a>    
+<a name="158"> 158</a>                    <i><font color=green># send to user in email
+</font></i><a name="159"> 159</a>                    <b>from</b> django.core.mail <b>import</b> send_mail
+<a name="160"> 160</a>                    message = <font color=darkcyan>"""You (or someone else) has requested a password reset for your account at advisoryscan.net:
+        Here is your new password: %s
+        
+        Sincerely,
+            advisoryscan.net
+                        """</font>
+ % new_password
+<a name="166"> 166</a>    
+<a name="167"> 167</a>                    send_mail(SITE_NAME+<font color=darkcyan>' Password Reset'</font>, message, <font color=darkcyan>'noreply@advisoryscan.net'</font>, [email], fail_silently=False)
+<a name="168"> 168</a>    
+<a name="169"> 169</a>                <b>except</b> User.DoesNotExist:
+<a name="170"> 170</a>                    <b>pass</b>
+<a name="171"> 171</a>    
+<a name="172"> 172</a>    
+<a name="173"> 173</a>        
+<a name="174"> 174</a>    
+<a name="175"> 175</a>        <b>return</b> render_to_response(template, response_dict, context_instance=RequestContext(request))
+<a name="176"> 176</a>    
+<a name="177"> 177</a>    @login_required
+<a name="178"> 178</a>    <b>def</b> user_prefs_simple(request, template=<font color=darkcyan>'prefs_simple.html'</font>, adv_url=<font color=darkcyan>'../prefs_advanced'</font>):
+<a name="179"> 179</a>        <font color=darkcyan>""" 
+            Allow user to modify their preferences, specifically:
+                Sources to search
+                Alert Delivery Methods
+                Criteria to search for (each set of values that make up a criterion is one instance of the criteria form)
+            """</font>
+
+<a name="185"> 185</a>        
+<a name="186"> 186</a>        <i><font color=green># initialize vars
+</font></i><a name="187"> 187</a>        response_dict = { <font color=darkcyan>'forms'</font>:{} }
+<a name="188"> 188</a>        response_dict[<font color=darkcyan>'error_message'</font>] = <font color=darkcyan>''</font>
+<a name="189"> 189</a>        criteria_list = []
+<a name="190"> 190</a>        criteria_valid_dict = {}
+<a name="191"> 191</a>        criteria_valid_list = []
+<a name="192"> 192</a>    
+<a name="193"> 193</a>        <b>if</b> request.method == <font color=darkcyan>"POST"</font>:
+<a name="194"> 194</a>            valid = True
+<a name="195"> 195</a>    
+<a name="196"> 196</a>            <b>for</b> input_name <b>in</b> request.POST.keys():
+<a name="197"> 197</a>                <i><font color=green># deal with multiple copies of the criteria form -- prefix allows each set to have a distinct naming scheme
+</font></i><a name="198"> 198</a>                <b>if</b> input_name.startswith(<font color=darkcyan>"criteria"</font>):
+<a name="199"> 199</a>                    prefix = input_name.split(<font color=darkcyan>'-'</font>)[0]
+<a name="200"> 200</a>                    input_value = request.POST.get(input_name, None)
+<a name="201"> 201</a>                    criteria = {<font color=darkcyan>'value'</font>:input_value}
+<a name="202"> 202</a>                    
+<a name="203"> 203</a>                    <i><font color=green># django bug #3969: very unfortunately django's newforms cannot handle a situation where a post returns both any errors and the values submitted when using name prefixes
+</font></i><a name="204"> 204</a>                    <i><font color=green># so we'll have to create a list of forms for display (criteria_list), and a dict for validation
+</font></i><a name="205"> 205</a>                    <i><font color=green># addendum -- forms class totally fails if bound to a dict and prefix is set -- apparently loses track of the name&lt;->form_var mapping so going to have to explicitly create
+</font></i><a name="206"> 206</a>                    <i><font color=green># errors...
+</font></i><a name="207"> 207</a>                    <i><font color=green># update: once newforms.formsets is finalized (i.e. available in trunk instead of just newforms-admin branch) -- this will change to use that much cleaner scheme
+</font></i><a name="208"> 208</a>                    criteria_form_valid = CriteriaFormSimple( criteria )
+<a name="209"> 209</a>    
+<a name="210"> 210</a>                    <i><font color=green># transform things so the errors show up
+</font></i><a name="211"> 211</a>                    criteria_form = CriteriaFormSimple( initial=criteria, prefix=prefix )
+<a name="212"> 212</a>                    <b>if</b> criteria_form_valid.errors != {}:
+<a name="213"> 213</a>                        valid = False
+<a name="214"> 214</a>                        <b>for</b> key <b>in</b> criteria_form_valid.errors:
+<a name="215"> 215</a>                            criteria_form.errors[key] = criteria_form_valid.errors[key]
+<a name="216"> 216</a>                    <b>else</b>:
+<a name="217"> 217</a>                        <i><font color=green># append a tuple of (prefix, form) since we can't get the prefix otherwise
+</font></i><a name="218"> 218</a>                        criteria_valid_list.append( (prefix, criteria_form_valid) )
+<a name="219"> 219</a>    
+<a name="220"> 220</a>                    criteria_list.append( criteria_form )
+<a name="221"> 221</a>    
+<a name="222"> 222</a>            <i><font color=green># update the response (will propogate to render at end of function)
+</font></i><a name="223"> 223</a>            response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'criteria_list'</font>] = criteria_list
+<a name="224"> 224</a>            response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'prefs'</font>] = PreferencesForm(request.POST)
+<a name="225"> 225</a>    
+<a name="226"> 226</a>            <b>if</b> valid <b>and</b> response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'prefs'</font>].is_valid():
+<a name="227"> 227</a>                <i><font color=green># set simple as default if enable exists in post, else disable it
+</font></i><a name="228"> 228</a>                profile = request.user.get_profile()
+<a name="229"> 229</a>                <b>if</b> request.POST.has_key(<font color=darkcyan>'enable'</font>):
+<a name="230"> 230</a>                    profile.criteria_pref_type = <font color=darkcyan>'simple'</font>
+<a name="231"> 231</a>                <b>else</b>:
+<a name="232"> 232</a>                    profile.criteria_pref_type = <font color=darkcyan>'advanced'</font>
+<a name="233"> 233</a>                profile.save()
+<a name="234"> 234</a>                response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'prefs'</font>].save(request.user)
+<a name="235"> 235</a>                <b>for</b> (prefix, criteria) <b>in</b> criteria_valid_list:
+<a name="236"> 236</a>                    type   = prefix.split(<font color=darkcyan>'_'</font>)[1]
+<a name="237"> 237</a>                    criteria_type = CriteriaType.objects.get(name=type) <i><font color=green># name/version</font></i>
+<a name="238"> 238</a>                    qualifier     = CriteriaQualifier.objects.get(name=<font color=darkcyan>'contains'</font>)
+<a name="239"> 239</a>                    <b>if</b> prefix.split(<font color=darkcyan>'_'</font>)[-1] == <font color=darkcyan>'new'</font> <b>and</b> criteria.clean_data[<font color=darkcyan>'value'</font>] != <font color=darkcyan>''</font>:
+<a name="240"> 240</a>                        <i><font color=green># create new criteria
+</font></i><a name="241"> 241</a>                        user_criteria = UserCriteria( user=request.user, criteria_type=criteria_type, qualifier=qualifier, value=criteria.clean_data[<font color=darkcyan>'value'</font>] )
+<a name="242"> 242</a>                        user_criteria.save()
+<a name="243"> 243</a>                    <b>elif</b> prefix.split(<font color=darkcyan>'_'</font>)[-1] == <font color=darkcyan>'new'</font> <b>and</b> criteria.clean_data[<font color=darkcyan>'value'</font>] == <font color=darkcyan>''</font>:
+<a name="244"> 244</a>                        <b>continue</b>
+<a name="245"> 245</a>                    <b>elif</b> criteria.clean_data[<font color=darkcyan>'value'</font>] == <font color=darkcyan>''</font>:
+<a name="246"> 246</a>                        <i><font color=green># user set existing criteria to blank so delete it from db
+</font></i><a name="247"> 247</a>                        criteria_id = prefix.split(<font color=darkcyan>'_'</font>)[-1]
+<a name="248"> 248</a>                        user_criteria = UserCriteria.objects.get( id=criteria_id )
+<a name="249"> 249</a>                        user_criteria.delete()
+<a name="250"> 250</a>                    <b>else</b>:
+<a name="251"> 251</a>                        <i><font color=green># modify existing criteria
+</font></i><a name="252"> 252</a>                        criteria_id = prefix.split(<font color=darkcyan>'_'</font>)[-1]
+<a name="253"> 253</a>                        user_criteria = UserCriteria.objects.get( id=criteria_id)
+<a name="254"> 254</a>                        user_criteria.value = criteria.data[<font color=darkcyan>'value'</font>] <i><font color=green># this makes no sense... everything validates but clean_data is not populated, no biggie, just weird</font></i>
+<a name="255"> 255</a>                        user_criteria.save()
+<a name="256"> 256</a>                request.user.message_set.create(message=<font color=darkcyan>"Preferences Update Successfully!"</font>)
+<a name="257"> 257</a>                <i><font color=green># reload the newly entered/changed database values
+</font></i><a name="258"> 258</a>                <b>return</b> HttpResponseRedirect( <font color=darkcyan>"."</font> )
+<a name="259"> 259</a>                
+<a name="260"> 260</a>        <b>else</b>:
+<a name="261"> 261</a>            <i><font color=green># initial load so grab from user's prefs in db
+</font></i><a name="262"> 262</a>            user_prefs_dict = {}
+<a name="263"> 263</a>            user_profile = request.user.get_profile()
+<a name="264"> 264</a>            user_prefs_dict[<font color=darkcyan>'alert_methods'</font>] = [k[<font color=darkcyan>'name'</font>] <b>for</b> k <b>in</b> user_profile.alert_methods.values()]
+<a name="265"> 265</a>            user_prefs_dict[<font color=darkcyan>'sources'</font>] = [k[<font color=darkcyan>'id'</font>] <b>for</b> k <b>in</b> user_profile.sources.values()]
+<a name="266"> 266</a>            <b>if</b> user_profile.criteria_pref_type == <font color=darkcyan>'simple'</font>:
+<a name="267"> 267</a>                user_prefs_dict[<font color=darkcyan>'enable'</font>] = True
+<a name="268"> 268</a>    
+<a name="269"> 269</a>            user_criteria_objs = UserCriteria.objects.filter( user=request.user )
+<a name="270"> 270</a>            user_criteria_dict = {}
+<a name="271"> 271</a>            <b>for</b> user_criteria <b>in</b> user_criteria_objs:
+<a name="272"> 272</a>                criteria_type_name = user_criteria.criteria_type.name
+<a name="273"> 273</a>                <b>if</b> criteria_type_name <b>in</b> SIMPLE_CRITERIA_TYPES:
+<a name="274"> 274</a>                    criteria_list.append(CriteriaFormSimple( initial={<font color=darkcyan>'value'</font>:user_criteria.value, }, prefix=<font color=darkcyan>"criteria_"</font>+criteria_type_name+<font color=darkcyan>'_'</font>+str(user_criteria.id)) )
+<a name="275"> 275</a>    
+<a name="276"> 276</a>            <i><font color=green># update the response dict
+</font></i><a name="277"> 277</a>            response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'criteria_list'</font>] = criteria_list
+<a name="278"> 278</a>            response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'prefs'</font>] = PreferencesForm( initial=user_prefs_dict )
+<a name="279"> 279</a>    
+<a name="280"> 280</a>        <i><font color=green>#response_dict['forms']['criteria_list'] = [ CriteriaFormSimple( {'value':'bleh'})  ]
+</font></i><a name="281"> 281</a>        response_dict[<font color=darkcyan>'advanced_prefs_url'</font>] = adv_url
+<a name="282"> 282</a>        <b>return</b> render_to_response(template, response_dict, context_instance=RequestContext(request))
+<a name="283"> 283</a>        
+<a name="284"> 284</a>    
+<a name="285"> 285</a>    
+<a name="286"> 286</a>    @login_required
+<a name="287"> 287</a>    <b>def</b> user_prefs_advanced(request, template=<font color=darkcyan>'prefs_adv.html'</font>, simple_url=<font color=darkcyan>'../prefs_simple'</font>):
+<a name="288"> 288</a>        <font color=darkcyan>""" 
+            Allow user to modify their preferences, specifically:
+                Sources to search
+                Alert Delivery Methods
+                Criteria to search for
+            """</font>
+
+<a name="294"> 294</a>    
+<a name="295"> 295</a>        <i><font color=green># initialize vars
+</font></i><a name="296"> 296</a>        response_dict = { <font color=darkcyan>'forms'</font>:{} }
+<a name="297"> 297</a>        response_dict[<font color=darkcyan>'error_message'</font>] = <font color=darkcyan>''</font>
+<a name="298"> 298</a>        criteria_list = []
+<a name="299"> 299</a>        criteria_valid_list = []
+<a name="300"> 300</a>    
+<a name="301"> 301</a>        <b>if</b> request.method == <font color=darkcyan>"POST"</font>:
+<a name="302"> 302</a>            valid = True
+<a name="303"> 303</a>            <i><font color=green># collect each set that corresponds to a user_criteria id
+</font></i><a name="304"> 304</a>            criteria_dict = {}
+<a name="305"> 305</a>            
+<a name="306"> 306</a>            <b>for</b> input_name <b>in</b> request.POST.keys():
+<a name="307"> 307</a>                <i><font color=green># here we must deal with multiple copies of the criteria form -- prefix allows each set to have a distinct naming scheme
+</font></i><a name="308"> 308</a>                <b>if</b> input_name.startswith(<font color=darkcyan>"criteria"</font>):
+<a name="309"> 309</a>                    prefix = input_name.split(<font color=darkcyan>'-'</font>)[0]
+<a name="310"> 310</a>                    input_type = input_name.split(<font color=darkcyan>'-'</font>)[1] <i><font color=green>#i.e. type/qualifier/value</font></i>
+<a name="311"> 311</a>                    <i><font color=green>#change this when we allow js/dom criteria additions
+</font></i><a name="312"> 312</a>                    criteria_id = prefix.split(<font color=darkcyan>'_'</font>)[1]
+<a name="313"> 313</a>                    <i><font color=green># combine all three inputs for each set into one for simpler access
+</font></i><a name="314"> 314</a>                    <b>if</b> <b>not</b> criteria_dict.has_key( criteria_id ):
+<a name="315"> 315</a>                        criteria_dict[ criteria_id ] = {}
+<a name="316"> 316</a>                    criteria_dict[ criteria_id ][ input_type ] = request.POST[ input_name ]
+<a name="317"> 317</a>                    <b>if</b> <b>not</b> criteria_dict[ criteria_id ].has_key(<font color=darkcyan>'prefix'</font>):
+<a name="318"> 318</a>                        criteria_dict[ criteria_id ][<font color=darkcyan>'prefix'</font>] = prefix
+<a name="319"> 319</a>    
+<a name="320"> 320</a>    
+<a name="321"> 321</a>            <b>for</b> criteria_id <b>in</b> criteria_dict.keys():
+<a name="322"> 322</a>                <i><font color=green># django bug #3969: very unfortunately django's newforms cannot handle a situation where a post returns both any errors and the values submitted when using name prefixes
+</font></i><a name="323"> 323</a>                <i><font color=green># so for now we'll have to hack around it a bit by making two separate lists - one for form return and one for validation
+</font></i><a name="324"> 324</a>                <i><font color=green># addendum -- forms class totally fails if bound to a dict and prefix is set -- apparently loses track of the name&lt;->form_var mapping so going to have to explicitly create
+</font></i><a name="325"> 325</a>                <i><font color=green># errors...
+</font></i><a name="326"> 326</a>                <i><font color=green># update: once newforms.formsets is finalized (i.e. available in trunk instead of just newforms-admin branch) -- this will change to use that much clean scheme
+</font></i><a name="327"> 327</a>                criteria = criteria_dict[criteria_id]
+<a name="328"> 328</a>                criteria_form_valid = CriteriaFormAdv( criteria )
+<a name="329"> 329</a>    
+<a name="330"> 330</a>                <i><font color=green># transform things so the errors show up
+</font></i><a name="331"> 331</a>                criteria_form = CriteriaFormAdv( initial=criteria, prefix=criteria[<font color=darkcyan>'prefix'</font>] )
+<a name="332"> 332</a>                <b>for</b> key <b>in</b> criteria_form_valid.errors:
+<a name="333"> 333</a>                    criteria_form.errors[key] = criteria_form_valid.errors[key]
+<a name="334"> 334</a>                <b>if</b> criteria_form.errors != {}:
+<a name="335"> 335</a>                    valid = False
+<a name="336"> 336</a>                criteria_list.append( criteria_form )
+<a name="337"> 337</a>    
+<a name="338"> 338</a>                criteria_valid_list.append( criteria_form )
+<a name="339"> 339</a>    
+<a name="340"> 340</a>            response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'criteria_list'</font>] = criteria_list
+<a name="341"> 341</a>            response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'prefs'</font>] = PreferencesForm(request.POST)
+<a name="342"> 342</a>    
+<a name="343"> 343</a>            <i><font color=green># update database
+</font></i><a name="344"> 344</a>            <b>if</b> valid <b>and</b> response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'prefs'</font>].is_valid():
+<a name="345"> 345</a>                request.user.message_set.create(message=<font color=darkcyan>"Preferences Update Successfully!"</font>)
+<a name="346"> 346</a>                response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'prefs'</font>].save(request.user)
+<a name="347"> 347</a>                <b>for</b> criteria_id <b>in</b> criteria_dict.keys():
+<a name="348"> 348</a>                    criteria = criteria_dict[ criteria_id ]
+<a name="349"> 349</a>                    <b>if</b> criteria_id == <font color=darkcyan>'new'</font> <b>and</b> criteria[<font color=darkcyan>'value'</font>] != <font color=darkcyan>''</font>:
+<a name="350"> 350</a>                        <i><font color=green># create new criteria set
+</font></i><a name="351"> 351</a>                        user_criteria = UserCriteria( user=request.user, criteria_type_id=criteria[<font color=darkcyan>'type'</font>], qualifier_id=criteria[<font color=darkcyan>'qualifier'</font>], value=criteria[<font color=darkcyan>'value'</font>] )
+<a name="352"> 352</a>                        user_criteria.save()
+<a name="353"> 353</a>                    <b>elif</b> criteria_id == <font color=darkcyan>'new'</font> <b>and</b> criteria[<font color=darkcyan>'value'</font>] == <font color=darkcyan>''</font>:
+<a name="354"> 354</a>                        <b>continue</b>
+<a name="355"> 355</a>                    <b>elif</b> criteria[<font color=darkcyan>'value'</font>] == <font color=darkcyan>''</font>:
+<a name="356"> 356</a>                        <i><font color=green># user set existing criteria to blank so delete it from db
+</font></i><a name="357"> 357</a>                        user_criteria = UserCriteria.objects.get( id=criteria_id )
+<a name="358"> 358</a>                        user_criteria.delete()
+<a name="359"> 359</a>                    <b>else</b>:
+<a name="360"> 360</a>                        user_criteria = UserCriteria.objects.get( id=criteria_id )
+<a name="361"> 361</a>                        user_criteria.criteria_type_id  = criteria[<font color=darkcyan>'type'</font>]
+<a name="362"> 362</a>                        user_criteria.qualifier_id      = criteria[<font color=darkcyan>'qualifier'</font>]
+<a name="363"> 363</a>                        user_criteria.value             = criteria[<font color=darkcyan>'value'</font>]
+<a name="364"> 364</a>                        user_criteria.save()
+<a name="365"> 365</a>                <i><font color=green># set advanced as default if enable exists in post, else disable it
+</font></i><a name="366"> 366</a>                profile = request.user.get_profile()
+<a name="367"> 367</a>                <b>if</b> request.POST.has_key(<font color=darkcyan>'enable'</font>):
+<a name="368"> 368</a>                    profile.criteria_pref_type = <font color=darkcyan>'advanced'</font>
+<a name="369"> 369</a>                <b>else</b>:
+<a name="370"> 370</a>                    profile.criteria_pref_type = <font color=darkcyan>'simple'</font>
+<a name="371"> 371</a>                profile.save()
+<a name="372"> 372</a>                <i><font color=green># reload the newly entered/changed database values
+</font></i><a name="373"> 373</a>                <b>return</b> HttpResponseRedirect( <font color=darkcyan>"."</font> )
+<a name="374"> 374</a>    
+<a name="375"> 375</a>        <b>else</b>:
+<a name="376"> 376</a>            <i><font color=green># initial load so grab from user's prefs in db
+</font></i><a name="377"> 377</a>            user_prefs_dict = {}
+<a name="378"> 378</a>            user_profile = request.user.get_profile()
+<a name="379"> 379</a>            user_prefs_dict[<font color=darkcyan>'alert_methods'</font>] = [k[<font color=darkcyan>'name'</font>] <b>for</b> k <b>in</b> user_profile.alert_methods.values()]
+<a name="380"> 380</a>            user_prefs_dict[<font color=darkcyan>'sources'</font>] = [k[<font color=darkcyan>'id'</font>] <b>for</b> k <b>in</b> user_profile.sources.values()]
+<a name="381"> 381</a>            <b>if</b> user_profile.criteria_pref_type == <font color=darkcyan>'advanced'</font>:
+<a name="382"> 382</a>                user_prefs_dict[<font color=darkcyan>'enable'</font>] = True
+<a name="383"> 383</a>    
+<a name="384"> 384</a>            criteria_list = []
+<a name="385"> 385</a>    
+<a name="386"> 386</a>            user_criteria_objs = UserCriteria.objects.filter( user=request.user )
+<a name="387"> 387</a>            <b>for</b> user_criteria <b>in</b> user_criteria_objs:
+<a name="388"> 388</a>                <b>if</b> user_criteria.criteria_type.name <b>in</b> SIMPLE_CRITERIA_TYPES:
+<a name="389"> 389</a>                    <b>continue</b>
+<a name="390"> 390</a>                user_criteria_dict = {}
+<a name="391"> 391</a>                user_criteria_dict[<font color=darkcyan>'type'</font>] = user_criteria.criteria_type.id
+<a name="392"> 392</a>                user_criteria_dict[<font color=darkcyan>'qualifier'</font>] = user_criteria.qualifier.id
+<a name="393"> 393</a>                user_criteria_dict[<font color=darkcyan>'value'</font>] = user_criteria.value
+<a name="394"> 394</a>                criteria_list.append( CriteriaFormAdv( initial=user_criteria_dict, prefix=<font color=darkcyan>'criteria_'</font>+str(user_criteria.id) ) )
+<a name="395"> 395</a>    
+<a name="396"> 396</a>            response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'prefs'</font>] = PreferencesForm( initial=user_prefs_dict )
+<a name="397"> 397</a>            response_dict[<font color=darkcyan>'forms'</font>][<font color=darkcyan>'criteria_list'</font>] = criteria_list
+<a name="398"> 398</a>    
+<a name="399"> 399</a>        response_dict[<font color=darkcyan>'simple_prefs_url'</font>] = simple_url
+<a name="400"> 400</a>        <b>return</b> render_to_response(template, response_dict, context_instance=RequestContext(request))
+<a name="401"> 401</a>    
+<a name="402"> 402</a>    
+<a name="403"> 403</a>    <b>def</b> user_messages(request, template):
+<a name="404"> 404</a>        response_dict = {}
+<a name="405"> 405</a>        user_profile = request.user.get_profile()
+<a name="406"> 406</a>        messages = user_profile.messages.all().order_by(<font color=darkcyan>'-id'</font>)
+<a name="407"> 407</a>        <b>if</b> messages.count() > 0:
+<a name="408"> 408</a>            response_dict[<font color=darkcyan>'user_messages'</font>] = messages
+<a name="409"> 409</a>        <b>else</b>:
+<a name="410"> 410</a>            response_dict[<font color=darkcyan>'mess'</font>] = <font color=darkcyan>"There are currently no messages that have matched your criteria"</font>
+<a name="411"> 411</a>        <b>return</b> render_to_response(template, response_dict, context_instance=RequestContext(request))</pre></div></ul></td></tr></table></body></html><hr><ul><table><tr><td valign=top><table><tr><td valign=top class="xref">ADMINS</td><td valign=top class="xref"> <a href="#10">10</a>  <a href="#44">44</a> </td></tr>
+<tr><td valign=top class="xref">ContactForm</td><td valign=top class="xref"> <a href="#8">8</a>  <a href="#35">35</a> </td></tr>
+<tr><td valign=top class="xref">CriteriaFormAdv</td><td valign=top class="xref"> <a href="#8">8</a>  <a href="#328">328</a>  <a href="#331">331</a>  <a href="#394">394</a> </td></tr>
+<tr><td valign=top class="xref">CriteriaFormSimple</td><td valign=top class="xref"> <a href="#8">8</a>  <a href="#208">208</a>  <a href="#211">211</a>  <a href="#274">274</a> </td></tr>
+<tr><td valign=top class="xref">CriteriaQualifier</td><td valign=top class="xref"> <a href="#9">9</a>  <a href="#238">238</a> </td></tr>
+<tr><td valign=top class="xref">CriteriaType</td><td valign=top class="xref"> <a href="#9">9</a>  <a href="#237">237</a> </td></tr>
+<tr><td valign=top class="xref">DoesNotExist</td><td valign=top class="xref"> <a href="#169">169</a> </td></tr>
+<tr><td valign=top class="xref">False</td><td valign=top class="xref"> <a href="#51">51</a>  <a href="#167">167</a>  <a href="#213">213</a>  <a href="#335">335</a> </td></tr>
+<tr><td valign=top class="xref">Http404</td><td valign=top class="xref"> <a href="#4">4</a> </td></tr>
+<tr><td valign=top class="xref">HttpResponse</td><td valign=top class="xref"> <a href="#4">4</a> </td></tr>
+<tr><td valign=top class="xref">HttpResponseRedirect</td><td valign=top class="xref"> <a href="#5">5</a>  <a href="#79">79</a>  <a href="#111">111</a>  <a href="#127">127</a>  <a href="#258">258</a>  <a href="#373">373</a> </td></tr>
+<tr><td valign=top class="xref">LoginForm</td><td valign=top class="xref"> <a href="#8">8</a>  <a href="#96">96</a>  <a href="#117">117</a> </td></tr>
+<tr><td valign=top class="xref">None</td><td valign=top class="xref"> <a href="#118">118</a>  <a href="#200">200</a> </td></tr>
+<tr><td valign=top class="xref">POST</td><td valign=top class="xref"> <a href="#35">35</a>  <a href="#56">56</a>  <a href="#57">57</a>  <a href="#70">70</a>  <a href="#96">96</a>  <a href="#104">104</a>  <a href="#133">133</a>  <a href="#135">135</a>  <a href="#143">143</a>  <a href="#196">196</a>  <a href="#200">200</a>  <a href="#224">224</a>  <a href="#229">229</a>  <a href="#306">306</a>  <a href="#316">316</a>  <a href="#341">341</a>  <a href="#367">367</a> </td></tr>
+<tr><td valign=top class="xref">PasswordChangeForm</td><td valign=top class="xref"> <a href="#8">8</a>  <a href="#133">133</a> </td></tr>
+<tr><td valign=top class="xref">PasswordResetForm</td><td valign=top class="xref"> <a href="#8">8</a>  <a href="#143">143</a> </td></tr>
+<tr><td valign=top class="xref">PreferencesForm</td><td valign=top class="xref"> <a href="#8">8</a>  <a href="#224">224</a>  <a href="#278">278</a>  <a href="#341">341</a>  <a href="#396">396</a> </td></tr>
+<tr><td valign=top class="xref">REQUEST</td><td valign=top class="xref"> <a href="#94">94</a> </td></tr>
+<tr><td valign=top class="xref">RequestContext</td><td valign=top class="xref"> <a href="#2">2</a>  <a href="#19">19</a>  <a href="#28">28</a>  <a href="#59">59</a>  <a href="#83">83</a>  <a href="#122">122</a>  <a href="#138">138</a>  <a href="#175">175</a>  <a href="#282">282</a>  <a href="#400">400</a>  <a href="#411">411</a> </td></tr>
+<tr><td valign=top class="xref">SIMPLE_CRITERIA_TYPES</td><td valign=top class="xref"> <a href="#10">10</a>  <a href="#273">273</a>  <a href="#388">388</a> </td></tr>
+<tr><td valign=top class="xref">SITE_NAME</td><td valign=top class="xref"> <a href="#10">10</a>  <a href="#51">51</a>  <a href="#167">167</a> </td></tr>
+<tr><td valign=top class="xref">SITE_ROOT</td><td valign=top class="xref"> <a href="#10">10</a>  <a href="#127">127</a> </td></tr>
+<tr><td valign=top class="xref">SignupForm</td><td valign=top class="xref"> <a href="#8">8</a>  <a href="#70">70</a>  <a href="#81">81</a> </td></tr>
+<tr><td valign=top class="xref">Source</td><td valign=top class="xref"> <a href="#9">9</a>  <a href="#14">14</a>  <a href="#23">23</a> </td></tr>
+<tr><td valign=top class="xref">True</td><td valign=top class="xref"> <a href="#194">194</a>  <a href="#267">267</a>  <a href="#302">302</a>  <a href="#382">382</a> </td></tr>
+<tr><td valign=top class="xref">User</td><td valign=top class="xref"> <a href="#9">9</a>  <a href="#150">150</a>  <a href="#169">169</a> </td></tr>
+<tr><td valign=top class="xref">UserCriteria</td><td valign=top class="xref"> <a href="#9">9</a>  <a href="#241">241</a>  <a href="#248">248</a>  <a href="#253">253</a>  <a href="#269">269</a>  <a href="#351">351</a>  <a href="#357">357</a>  <a href="#360">360</a>  <a href="#386">386</a> </td></tr>
+<tr><td valign=top class="xref">_</td><td valign=top class="xref"> <a href="#72">72</a>  <a href="#98">98</a>  <a href="#114">114</a> </td></tr>
+<tr><td valign=top class="xref">about</td><td valign=top class="xref"> <a href="#21">21</a> </td></tr>
+<tr><td valign=top class="xref">admin_email</td><td valign=top class="xref"> <a href="#44">44</a>  <a href="#51">51</a> </td></tr>
+<tr><td valign=top class="xref">adv_url</td><td valign=top class="xref"> <a href="#178">178</a>  <a href="#281">281</a> </td></tr>
+<tr><td valign=top class="xref">alert_methods</td><td valign=top class="xref"> <a href="#264">264</a>  <a href="#379">379</a> </td></tr>
+<tr><td valign=top class="xref">all</td><td valign=top class="xref"> <a href="#14">14</a>  <a href="#23">23</a>  <a href="#406">406</a> </td></tr>
+<tr><td valign=top class="xref">anchor</td><td valign=top class="xref"> <a href="#16">16</a>  <a href="#25">25</a> </td></tr>
+<tr><td valign=top class="xref">append</td><td valign=top class="xref"> <a href="#218">218</a>  <a href="#220">220</a>  <a href="#274">274</a>  <a href="#336">336</a>  <a href="#338">338</a>  <a href="#394">394</a> </td></tr>
+<tr><td valign=top class="xref">auth</td><td valign=top class="xref"> <a href="#6">6</a>  <a href="#7">7</a> </td></tr>
+<tr><td valign=top class="xref">authenticate</td><td valign=top class="xref"> <a href="#6">6</a>  <a href="#105">105</a> </td></tr>
+<tr><td valign=top class="xref">clean_data</td><td valign=top class="xref"> <a href="#39">39</a>  <a href="#40">40</a>  <a href="#41">41</a>  <a href="#146">146</a>  <a href="#239">239</a>  <a href="#241">241</a>  <a href="#243">243</a>  <a href="#245">245</a> </td></tr>
+<tr><td valign=top class="xref">contact</td><td valign=top class="xref"> <a href="#30">30</a> </td></tr>
+<tr><td valign=top class="xref">context_instance</td><td valign=top class="xref"> <a href="#19">19</a>  <a href="#28">28</a>  <a href="#59">59</a>  <a href="#83">83</a>  <a href="#122">122</a>  <a href="#138">138</a>  <a href="#175">175</a>  <a href="#282">282</a>  <a href="#400">400</a>  <a href="#411">411</a> </td></tr>
+<tr><td valign=top class="xref">contrib</td><td valign=top class="xref"> <a href="#6">6</a>  <a href="#7">7</a> </td></tr>
+<tr><td valign=top class="xref">copy</td><td valign=top class="xref"> <a href="#104">104</a> </td></tr>
+<tr><td valign=top class="xref">core</td><td valign=top class="xref"> <a href="#45">45</a>  <a href="#159">159</a> </td></tr>
+<tr><td valign=top class="xref">count</td><td valign=top class="xref"> <a href="#407">407</a> </td></tr>
+<tr><td valign=top class="xref">create</td><td valign=top class="xref"> <a href="#137">137</a>  <a href="#256">256</a>  <a href="#345">345</a> </td></tr>
+<tr><td valign=top class="xref">criteria</td><td valign=top class="xref"> <a href="#201">201</a>  <a href="#208">208</a>  <a href="#211">211</a>  <a href="#235">235</a>  <a href="#239">239</a>  <a href="#241">241</a>  <a href="#243">243</a>  <a href="#245">245</a>  <a href="#254">254</a>  <a href="#327">327</a>  <a href="#328">328</a>  <a href="#331">331</a>  <a href="#348">348</a>  <a href="#349">349</a>  <a href="#351">351</a>  <a href="#353">353</a>  <a href="#355">355</a>  <a href="#361">361</a>  <a href="#362">362</a>  <a href="#363">363</a> </td></tr>
+<tr><td valign=top class="xref">criteria_dict</td><td valign=top class="xref"> <a href="#304">304</a>  <a href="#314">314</a>  <a href="#315">315</a>  <a href="#316">316</a>  <a href="#317">317</a>  <a href="#318">318</a>  <a href="#321">321</a>  <a href="#327">327</a>  <a href="#347">347</a>  <a href="#348">348</a> </td></tr>
+<tr><td valign=top class="xref">criteria_form</td><td valign=top class="xref"> <a href="#211">211</a>  <a href="#215">215</a>  <a href="#220">220</a>  <a href="#331">331</a>  <a href="#333">333</a>  <a href="#334">334</a>  <a href="#336">336</a>  <a href="#338">338</a> </td></tr>
+<tr><td valign=top class="xref">criteria_form_valid</td><td valign=top class="xref"> <a href="#208">208</a>  <a href="#212">212</a>  <a href="#214">214</a>  <a href="#215">215</a>  <a href="#218">218</a>  <a href="#328">328</a>  <a href="#332">332</a>  <a href="#333">333</a> </td></tr>
+<tr><td valign=top class="xref">criteria_id</td><td valign=top class="xref"> <a href="#247">247</a>  <a href="#248">248</a>  <a href="#252">252</a>  <a href="#253">253</a>  <a href="#312">312</a>  <a href="#314">314</a>  <a href="#315">315</a>  <a href="#316">316</a>  <a href="#317">317</a>  <a href="#318">318</a>  <a href="#321">321</a>  <a href="#327">327</a>  <a href="#347">347</a>  <a href="#348">348</a>  <a href="#349">349</a>  <a href="#353">353</a>  <a href="#357">357</a>  <a href="#360">360</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">criteria_list</td><td valign=top class="xref"> <a href="#189">189</a>  <a href="#220">220</a>  <a href="#223">223</a>  <a href="#274">274</a>  <a href="#277">277</a>  <a href="#298">298</a>  <a href="#336">336</a>  <a href="#340">340</a>  <a href="#384">384</a>  <a href="#394">394</a>  <a href="#397">397</a> </td></tr>
+<tr><td valign=top class="xref">criteria_pref_type</td><td valign=top class="xref"> <a href="#109">109</a>  <a href="#110">110</a>  <a href="#230">230</a>  <a href="#232">232</a>  <a href="#266">266</a>  <a href="#368">368</a>  <a href="#370">370</a>  <a href="#381">381</a> </td></tr>
+<tr><td valign=top class="xref">criteria_type</td><td valign=top class="xref"> <a href="#237">237</a>  <a href="#241">241</a>  <a href="#272">272</a>  <a href="#388">388</a>  <a href="#391">391</a> </td></tr>
+<tr><td valign=top class="xref">criteria_type_id</td><td valign=top class="xref"> <a href="#351">351</a>  <a href="#361">361</a> </td></tr>
+<tr><td valign=top class="xref">criteria_type_name</td><td valign=top class="xref"> <a href="#272">272</a>  <a href="#273">273</a>  <a href="#274">274</a> </td></tr>
+<tr><td valign=top class="xref">criteria_valid_dict</td><td valign=top class="xref"> <a href="#190">190</a> </td></tr>
+<tr><td valign=top class="xref">criteria_valid_list</td><td valign=top class="xref"> <a href="#191">191</a>  <a href="#218">218</a>  <a href="#235">235</a>  <a href="#299">299</a>  <a href="#338">338</a> </td></tr>
+<tr><td valign=top class="xref">data</td><td valign=top class="xref"> <a href="#35">35</a>  <a href="#104">104</a>  <a href="#105">105</a>  <a href="#133">133</a>  <a href="#143">143</a>  <a href="#254">254</a> </td></tr>
+<tr><td valign=top class="xref">decorators</td><td valign=top class="xref"> <a href="#7">7</a> </td></tr>
+<tr><td valign=top class="xref">delete</td><td valign=top class="xref"> <a href="#249">249</a>  <a href="#358">358</a> </td></tr>
+<tr><td valign=top class="xref">delete_test_cookie</td><td valign=top class="xref"> <a href="#76">76</a> </td></tr>
+<tr><td valign=top class="xref">django</td><td valign=top class="xref"> <a href="#1">1</a>  <a href="#2">2</a>  <a href="#3">3</a>  <a href="#4">4</a>  <a href="#5">5</a>  <a href="#6">6</a>  <a href="#7">7</a>  <a href="#45">45</a>  <a href="#159">159</a> </td></tr>
+<tr><td valign=top class="xref">email</td><td valign=top class="xref"> <a href="#33">33</a>  <a href="#39">39</a>  <a href="#49">49</a>  <a href="#51">51</a>  <a href="#146">146</a>  <a href="#148">148</a>  <a href="#150">150</a>  <a href="#167">167</a> </td></tr>
+<tr><td valign=top class="xref">errors</td><td valign=top class="xref"> <a href="#212">212</a>  <a href="#214">214</a>  <a href="#215">215</a>  <a href="#332">332</a>  <a href="#333">333</a>  <a href="#334">334</a> </td></tr>
+<tr><td valign=top class="xref">fail_silently</td><td valign=top class="xref"> <a href="#51">51</a>  <a href="#167">167</a> </td></tr>
+<tr><td valign=top class="xref">filter</td><td valign=top class="xref"> <a href="#269">269</a>  <a href="#386">386</a> </td></tr>
+<tr><td valign=top class="xref">first_name</td><td valign=top class="xref"> <a href="#33">33</a> </td></tr>
+<tr><td valign=top class="xref">forms</td><td valign=top class="xref"> <a href="#8">8</a> </td></tr>
+<tr><td valign=top class="xref">get</td><td valign=top class="xref"> <a href="#94">94</a>  <a href="#118">118</a>  <a href="#150">150</a>  <a href="#200">200</a>  <a href="#237">237</a>  <a href="#238">238</a>  <a href="#248">248</a>  <a href="#253">253</a>  <a href="#357">357</a>  <a href="#360">360</a> </td></tr>
+<tr><td valign=top class="xref">get_object_or_404</td><td valign=top class="xref"> <a href="#1">1</a> </td></tr>
+<tr><td valign=top class="xref">get_profile</td><td valign=top class="xref"> <a href="#108">108</a>  <a href="#228">228</a>  <a href="#263">263</a>  <a href="#366">366</a>  <a href="#378">378</a>  <a href="#405">405</a> </td></tr>
+<tr><td valign=top class="xref">has_key</td><td valign=top class="xref"> <a href="#229">229</a>  <a href="#314">314</a>  <a href="#317">317</a>  <a href="#367">367</a> </td></tr>
+<tr><td valign=top class="xref">http</td><td valign=top class="xref"> <a href="#4">4</a>  <a href="#5">5</a> </td></tr>
+<tr><td valign=top class="xref">id</td><td valign=top class="xref"> <a href="#248">248</a>  <a href="#253">253</a>  <a href="#274">274</a>  <a href="#357">357</a>  <a href="#360">360</a>  <a href="#391">391</a>  <a href="#392">392</a>  <a href="#394">394</a> </td></tr>
+<tr><td valign=top class="xref">index</td><td valign=top class="xref"> <a href="#12">12</a> </td></tr>
+<tr><td valign=top class="xref">initial</td><td valign=top class="xref"> <a href="#211">211</a>  <a href="#274">274</a>  <a href="#278">278</a>  <a href="#331">331</a>  <a href="#394">394</a>  <a href="#396">396</a> </td></tr>
+<tr><td valign=top class="xref">input_name</td><td valign=top class="xref"> <a href="#56">56</a>  <a href="#57">57</a>  <a href="#196">196</a>  <a href="#198">198</a>  <a href="#199">199</a>  <a href="#200">200</a>  <a href="#306">306</a>  <a href="#308">308</a>  <a href="#309">309</a>  <a href="#310">310</a>  <a href="#316">316</a> </td></tr>
+<tr><td valign=top class="xref">input_type</td><td valign=top class="xref"> <a href="#310">310</a>  <a href="#316">316</a> </td></tr>
+<tr><td valign=top class="xref">input_value</td><td valign=top class="xref"> <a href="#200">200</a>  <a href="#201">201</a> </td></tr>
+<tr><td valign=top class="xref">is_authenticated</td><td valign=top class="xref"> <a href="#32">32</a> </td></tr>
+<tr><td valign=top class="xref">is_valid</td><td valign=top class="xref"> <a href="#36">36</a>  <a href="#75">75</a>  <a href="#102">102</a>  <a href="#103">103</a>  <a href="#112">112</a>  <a href="#134">134</a>  <a href="#144">144</a>  <a href="#226">226</a>  <a href="#344">344</a> </td></tr>
+<tr><td valign=top class="xref">k</td><td valign=top class="xref"> <a href="#264">264</a>  <a href="#265">265</a>  <a href="#379">379</a>  <a href="#380">380</a> </td></tr>
+<tr><td valign=top class="xref">key</td><td valign=top class="xref"> <a href="#214">214</a>  <a href="#215">215</a>  <a href="#332">332</a>  <a href="#333">333</a> </td></tr>
+<tr><td valign=top class="xref">keys</td><td valign=top class="xref"> <a href="#56">56</a>  <a href="#196">196</a>  <a href="#306">306</a>  <a href="#321">321</a>  <a href="#347">347</a> </td></tr>
+<tr><td valign=top class="xref">last_name</td><td valign=top class="xref"> <a href="#33">33</a> </td></tr>
+<tr><td valign=top class="xref">login</td><td valign=top class="xref"> <a href="#6">6</a>  <a href="#107">107</a> </td></tr>
+<tr><td valign=top class="xref">login_form</td><td valign=top class="xref"> <a href="#86">86</a> </td></tr>
+<tr><td valign=top class="xref">login_required</td><td valign=top class="xref"> <a href="#7">7</a>  <a href="#124">124</a>  <a href="#129">129</a>  <a href="#177">177</a>  <a href="#286">286</a> </td></tr>
+<tr><td valign=top class="xref">login_url</td><td valign=top class="xref"> <a href="#61">61</a>  <a href="#79">79</a> </td></tr>
+<tr><td valign=top class="xref">logout</td><td valign=top class="xref"> <a href="#6">6</a>  <a href="#126">126</a> </td></tr>
+<tr><td valign=top class="xref">logout_view</td><td valign=top class="xref"> <a href="#125">125</a> </td></tr>
+<tr><td valign=top class="xref">mail</td><td valign=top class="xref"> <a href="#45">45</a>  <a href="#159">159</a> </td></tr>
+<tr><td valign=top class="xref">message</td><td valign=top class="xref"> <a href="#41">41</a>  <a href="#46">46</a>  <a href="#49">49</a>  <a href="#51">51</a>  <a href="#137">137</a>  <a href="#160">160</a>  <a href="#167">167</a>  <a href="#256">256</a>  <a href="#345">345</a> </td></tr>
+<tr><td valign=top class="xref">message_set</td><td valign=top class="xref"> <a href="#137">137</a>  <a href="#256">256</a>  <a href="#345">345</a> </td></tr>
+<tr><td valign=top class="xref">messages</td><td valign=top class="xref"> <a href="#406">406</a>  <a href="#407">407</a>  <a href="#408">408</a> </td></tr>
+<tr><td valign=top class="xref">method</td><td valign=top class="xref"> <a href="#34">34</a>  <a href="#69">69</a>  <a href="#95">95</a>  <a href="#132">132</a>  <a href="#142">142</a>  <a href="#193">193</a>  <a href="#301">301</a> </td></tr>
+<tr><td valign=top class="xref">models</td><td valign=top class="xref"> <a href="#9">9</a> </td></tr>
+<tr><td valign=top class="xref">name</td><td valign=top class="xref"> <a href="#16">16</a>  <a href="#25">25</a>  <a href="#40">40</a>  <a href="#49">49</a>  <a href="#237">237</a>  <a href="#238">238</a>  <a href="#272">272</a>  <a href="#388">388</a> </td></tr>
+<tr><td valign=top class="xref">new_password</td><td valign=top class="xref"> <a href="#154">154</a>  <a href="#155">155</a>  <a href="#165">165</a> </td></tr>
+<tr><td valign=top class="xref">next</td><td valign=top class="xref"> <a href="#86">86</a>  <a href="#94">94</a>  <a href="#110">110</a>  <a href="#111">111</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">nicepass</td><td valign=top class="xref"> <a href="#153">153</a>  <a href="#154">154</a> </td></tr>
+<tr><td valign=top class="xref">objects</td><td valign=top class="xref"> <a href="#14">14</a>  <a href="#23">23</a>  <a href="#150">150</a>  <a href="#237">237</a>  <a href="#238">238</a>  <a href="#248">248</a>  <a href="#253">253</a>  <a href="#269">269</a>  <a href="#357">357</a>  <a href="#360">360</a>  <a href="#386">386</a> </td></tr>
+<tr><td valign=top class="xref">order_by</td><td valign=top class="xref"> <a href="#406">406</a> </td></tr>
+<tr><td valign=top class="xref">password</td><td valign=top class="xref"> <a href="#105">105</a> </td></tr>
+<tr><td valign=top class="xref">password_change</td><td valign=top class="xref"> <a href="#130">130</a> </td></tr>
+<tr><td valign=top class="xref">password_reset</td><td valign=top class="xref"> <a href="#140">140</a> </td></tr>
+<tr><td valign=top class="xref">prefix</td><td valign=top class="xref"> <a href="#199">199</a>  <a href="#211">211</a>  <a href="#218">218</a>  <a href="#235">235</a>  <a href="#236">236</a>  <a href="#239">239</a>  <a href="#243">243</a>  <a href="#247">247</a>  <a href="#252">252</a>  <a href="#274">274</a>  <a href="#309">309</a>  <a href="#312">312</a>  <a href="#318">318</a>  <a href="#331">331</a>  <a href="#394">394</a> </td></tr>
+<tr><td valign=top class="xref">profile</td><td valign=top class="xref"> <a href="#228">228</a>  <a href="#230">230</a>  <a href="#232">232</a>  <a href="#233">233</a>  <a href="#366">366</a>  <a href="#368">368</a>  <a href="#370">370</a>  <a href="#371">371</a> </td></tr>
+<tr><td valign=top class="xref">qualifier</td><td valign=top class="xref"> <a href="#238">238</a>  <a href="#241">241</a>  <a href="#392">392</a> </td></tr>
+<tr><td valign=top class="xref">qualifier_id</td><td valign=top class="xref"> <a href="#351">351</a>  <a href="#362">362</a> </td></tr>
+<tr><td valign=top class="xref">render_to_response</td><td valign=top class="xref"> <a href="#1">1</a>  <a href="#19">19</a>  <a href="#28">28</a>  <a href="#59">59</a>  <a href="#74">74</a>  <a href="#83">83</a>  <a href="#100">100</a>  <a href="#122">122</a>  <a href="#138">138</a>  <a href="#175">175</a>  <a href="#282">282</a>  <a href="#400">400</a>  <a href="#411">411</a> </td></tr>
+<tr><td valign=top class="xref">replace</td><td valign=top class="xref"> <a href="#16">16</a>  <a href="#25">25</a> </td></tr>
+<tr><td valign=top class="xref">request</td><td valign=top class="xref"> <a href="#12">12</a>  <a href="#19">19</a>  <a href="#21">21</a>  <a href="#28">28</a>  <a href="#30">30</a>  <a href="#32">32</a>  <a href="#33">33</a>  <a href="#34">34</a>  <a href="#35">35</a>  <a href="#56">56</a>  <a href="#57">57</a>  <a href="#59">59</a>  <a href="#61">61</a>  <a href="#69">69</a>  <a href="#70">70</a>  <a href="#71">71</a>  <a href="#73">73</a>  <a href="#76">76</a>  <a href="#78">78</a>  <a href="#82">82</a>  <a href="#83">83</a>  <a href="#86">86</a>  <a href="#94">94</a>  <a href="#95">95</a>  <a href="#96">96</a>  <a href="#97">97</a>  <a href="#99">99</a>  <a href="#104">104</a>  <a href="#107">107</a>  <a href="#108">108</a>  <a href="#118">118</a>  <a href="#119">119</a>  <a href="#121">121</a>  <a href="#122">122</a>  <a href="#125">125</a>  <a href="#126">126</a>  <a href="#130">130</a>  <a href="#132">132</a>  <a href="#133">133</a>  <a href="#135">135</a>  <a href="#136">136</a>  <a href="#137">137</a>  <a href="#138">138</a>  <a href="#140">140</a>  <a href="#142">142</a>  <a href="#143">143</a>  <a href="#175">175</a>  <a href="#178">178</a>  <a href="#193">193</a>  <a href="#196">196</a>  <a href="#200">200</a>  <a href="#224">224</a>  <a href="#228">228</a>  <a href="#229">229</a>  <a href="#234">234</a>  <a href="#241">241</a>  <a href="#256">256</a>  <a href="#263">263</a>  <a href="#269">269</a>  <a href="#282">282</a>  <a href="#287">287</a>  <a href="#301">301</a>  <a href="#306">306</a>  <a href="#316">316</a>  <a href="#341">341</a>  <a href="#345">345</a>  <a href="#346">346</a>  <a href="#351">351</a>  <a href="#366">366</a>  <a href="#367">367</a>  <a href="#378">378</a>  <a href="#386">386</a>  <a href="#400">400</a>  <a href="#403">403</a>  <a href="#405">405</a>  <a href="#411">411</a> </td></tr>
+<tr><td valign=top class="xref">response_dict</td><td valign=top class="xref"> <a href="#13">13</a>  <a href="#17">17</a>  <a href="#19">19</a>  <a href="#22">22</a>  <a href="#26">26</a>  <a href="#28">28</a>  <a href="#31">31</a>  <a href="#33">33</a>  <a href="#35">35</a>  <a href="#36">36</a>  <a href="#37">37</a>  <a href="#39">39</a>  <a href="#40">40</a>  <a href="#41">41</a>  <a href="#55">55</a>  <a href="#57">57</a>  <a href="#59">59</a>  <a href="#66">66</a>  <a href="#67">67</a>  <a href="#68">68</a>  <a href="#70">70</a>  <a href="#72">72</a>  <a href="#74">74</a>  <a href="#75">75</a>  <a href="#77">77</a>  <a href="#81">81</a>  <a href="#83">83</a>  <a href="#91">91</a>  <a href="#92">92</a>  <a href="#93">93</a>  <a href="#96">96</a>  <a href="#98">98</a>  <a href="#100">100</a>  <a href="#102">102</a>  <a href="#114">114</a>  <a href="#117">117</a>  <a href="#120">120</a>  <a href="#122">122</a>  <a href="#131">131</a>  <a href="#133">133</a>  <a href="#134">134</a>  <a href="#138">138</a>  <a href="#141">141</a>  <a href="#143">143</a>  <a href="#144">144</a>  <a href="#146">146</a>  <a href="#148">148</a>  <a href="#175">175</a>  <a href="#187">187</a>  <a href="#188">188</a>  <a href="#223">223</a>  <a href="#224">224</a>  <a href="#226">226</a>  <a href="#234">234</a>  <a href="#277">277</a>  <a href="#278">278</a>  <a href="#281">281</a>  <a href="#282">282</a>  <a href="#296">296</a>  <a href="#297">297</a>  <a href="#340">340</a>  <a href="#341">341</a>  <a href="#344">344</a>  <a href="#346">346</a>  <a href="#396">396</a>  <a href="#397">397</a>  <a href="#399">399</a>  <a href="#400">400</a>  <a href="#404">404</a>  <a href="#408">408</a>  <a href="#410">410</a>  <a href="#411">411</a> </td></tr>
+<tr><td valign=top class="xref">save</td><td valign=top class="xref"> <a href="#77">77</a>  <a href="#136">136</a>  <a href="#156">156</a>  <a href="#233">233</a>  <a href="#234">234</a>  <a href="#242">242</a>  <a href="#255">255</a>  <a href="#346">346</a>  <a href="#352">352</a>  <a href="#364">364</a>  <a href="#371">371</a> </td></tr>
+<tr><td valign=top class="xref">send_mail</td><td valign=top class="xref"> <a href="#45">45</a>  <a href="#51">51</a>  <a href="#159">159</a>  <a href="#167">167</a> </td></tr>
+<tr><td valign=top class="xref">session</td><td valign=top class="xref"> <a href="#71">71</a>  <a href="#73">73</a>  <a href="#76">76</a>  <a href="#78">78</a>  <a href="#82">82</a>  <a href="#97">97</a>  <a href="#99">99</a>  <a href="#118">118</a>  <a href="#119">119</a>  <a href="#121">121</a> </td></tr>
+<tr><td valign=top class="xref">set_password</td><td valign=top class="xref"> <a href="#135">135</a>  <a href="#155">155</a> </td></tr>
+<tr><td valign=top class="xref">set_test_cookie</td><td valign=top class="xref"> <a href="#73">73</a>  <a href="#82">82</a>  <a href="#99">99</a>  <a href="#121">121</a> </td></tr>
+<tr><td valign=top class="xref">settings</td><td valign=top class="xref"> <a href="#10">10</a> </td></tr>
+<tr><td valign=top class="xref">shortcuts</td><td valign=top class="xref"> <a href="#1">1</a> </td></tr>
+<tr><td valign=top class="xref">signup</td><td valign=top class="xref"> <a href="#61">61</a> </td></tr>
+<tr><td valign=top class="xref">simple_url</td><td valign=top class="xref"> <a href="#287">287</a>  <a href="#399">399</a> </td></tr>
+<tr><td valign=top class="xref">simplejson</td><td valign=top class="xref"> <a href="#3">3</a> </td></tr>
+<tr><td valign=top class="xref">source</td><td valign=top class="xref"> <a href="#15">15</a>  <a href="#16">16</a>  <a href="#24">24</a>  <a href="#25">25</a> </td></tr>
+<tr><td valign=top class="xref">sources</td><td valign=top class="xref"> <a href="#14">14</a>  <a href="#15">15</a>  <a href="#17">17</a>  <a href="#23">23</a>  <a href="#24">24</a>  <a href="#26">26</a>  <a href="#265">265</a>  <a href="#380">380</a> </td></tr>
+<tr><td valign=top class="xref">split</td><td valign=top class="xref"> <a href="#199">199</a>  <a href="#236">236</a>  <a href="#239">239</a>  <a href="#243">243</a>  <a href="#247">247</a>  <a href="#252">252</a>  <a href="#309">309</a>  <a href="#310">310</a>  <a href="#312">312</a> </td></tr>
+<tr><td valign=top class="xref">startswith</td><td valign=top class="xref"> <a href="#198">198</a>  <a href="#308">308</a> </td></tr>
+<tr><td valign=top class="xref">str</td><td valign=top class="xref"> <a href="#274">274</a>  <a href="#394">394</a> </td></tr>
+<tr><td valign=top class="xref">template</td><td valign=top class="xref"> <a href="#2">2</a>  <a href="#12">12</a>  <a href="#19">19</a>  <a href="#21">21</a>  <a href="#28">28</a>  <a href="#30">30</a>  <a href="#59">59</a>  <a href="#61">61</a>  <a href="#74">74</a>  <a href="#83">83</a>  <a href="#86">86</a>  <a href="#100">100</a>  <a href="#122">122</a>  <a href="#130">130</a>  <a href="#138">138</a>  <a href="#140">140</a>  <a href="#175">175</a>  <a href="#178">178</a>  <a href="#282">282</a>  <a href="#287">287</a>  <a href="#400">400</a>  <a href="#403">403</a>  <a href="#411">411</a> </td></tr>
+<tr><td valign=top class="xref">test_cookie_worked</td><td valign=top class="xref"> <a href="#71">71</a>  <a href="#97">97</a> </td></tr>
+<tr><td valign=top class="xref">type</td><td valign=top class="xref"> <a href="#236">236</a>  <a href="#237">237</a> </td></tr>
+<tr><td valign=top class="xref">user</td><td valign=top class="xref"> <a href="#32">32</a>  <a href="#33">33</a>  <a href="#77">77</a>  <a href="#105">105</a>  <a href="#106">106</a>  <a href="#107">107</a>  <a href="#108">108</a>  <a href="#112">112</a>  <a href="#135">135</a>  <a href="#136">136</a>  <a href="#137">137</a>  <a href="#150">150</a>  <a href="#155">155</a>  <a href="#156">156</a>  <a href="#228">228</a>  <a href="#234">234</a>  <a href="#241">241</a>  <a href="#256">256</a>  <a href="#263">263</a>  <a href="#269">269</a>  <a href="#345">345</a>  <a href="#346">346</a>  <a href="#351">351</a>  <a href="#366">366</a>  <a href="#378">378</a>  <a href="#386">386</a>  <a href="#405">405</a> </td></tr>
+<tr><td valign=top class="xref">user_criteria</td><td valign=top class="xref"> <a href="#241">241</a>  <a href="#242">242</a>  <a href="#248">248</a>  <a href="#249">249</a>  <a href="#253">253</a>  <a href="#254">254</a>  <a href="#255">255</a>  <a href="#271">271</a>  <a href="#272">272</a>  <a href="#274">274</a>  <a href="#351">351</a>  <a href="#352">352</a>  <a href="#357">357</a>  <a href="#358">358</a>  <a href="#360">360</a>  <a href="#361">361</a>  <a href="#362">362</a>  <a href="#363">363</a>  <a href="#364">364</a>  <a href="#387">387</a>  <a href="#388">388</a>  <a href="#391">391</a>  <a href="#392">392</a>  <a href="#393">393</a>  <a href="#394">394</a> </td></tr>
+<tr><td valign=top class="xref">user_criteria_dict</td><td valign=top class="xref"> <a href="#270">270</a>  <a href="#390">390</a>  <a href="#391">391</a>  <a href="#392">392</a>  <a href="#393">393</a>  <a href="#394">394</a> </td></tr>
+<tr><td valign=top class="xref">user_criteria_objs</td><td valign=top class="xref"> <a href="#269">269</a>  <a href="#271">271</a>  <a href="#386">386</a>  <a href="#387">387</a> </td></tr>
+<tr><td valign=top class="xref">user_messages</td><td valign=top class="xref"> <a href="#403">403</a> </td></tr>
+<tr><td valign=top class="xref">user_prefs_advanced</td><td valign=top class="xref"> <a href="#287">287</a> </td></tr>
+<tr><td valign=top class="xref">user_prefs_dict</td><td valign=top class="xref"> <a href="#262">262</a>  <a href="#264">264</a>  <a href="#265">265</a>  <a href="#267">267</a>  <a href="#278">278</a>  <a href="#377">377</a>  <a href="#379">379</a>  <a href="#380">380</a>  <a href="#382">382</a>  <a href="#396">396</a> </td></tr>
+<tr><td valign=top class="xref">user_prefs_simple</td><td valign=top class="xref"> <a href="#178">178</a> </td></tr>
+<tr><td valign=top class="xref">user_profile</td><td valign=top class="xref"> <a href="#108">108</a>  <a href="#109">109</a>  <a href="#263">263</a>  <a href="#264">264</a>  <a href="#265">265</a>  <a href="#266">266</a>  <a href="#378">378</a>  <a href="#379">379</a>  <a href="#380">380</a>  <a href="#381">381</a>  <a href="#405">405</a>  <a href="#406">406</a> </td></tr>
+<tr><td valign=top class="xref">username</td><td valign=top class="xref"> <a href="#105">105</a> </td></tr>
+<tr><td valign=top class="xref">util</td><td valign=top class="xref"> <a href="#153">153</a> </td></tr>
+<tr><td valign=top class="xref">utils</td><td valign=top class="xref"> <a href="#3">3</a> </td></tr>
+<tr><td valign=top class="xref">valid</td><td valign=top class="xref"> <a href="#194">194</a>  <a href="#213">213</a>  <a href="#226">226</a>  <a href="#302">302</a>  <a href="#335">335</a>  <a href="#344">344</a> </td></tr>
+<tr><td valign=top class="xref">value</td><td valign=top class="xref"> <a href="#241">241</a>  <a href="#254">254</a>  <a href="#274">274</a>  <a href="#351">351</a>  <a href="#363">363</a>  <a href="#393">393</a> </td></tr>
+<tr><td valign=top class="xref">values</td><td valign=top class="xref"> <a href="#264">264</a>  <a href="#265">265</a>  <a href="#379">379</a>  <a href="#380">380</a> </td></tr>
+<tr><td valign=top class="xref">vulnalert</td><td valign=top class="xref"> <a href="#8">8</a>  <a href="#9">9</a>  <a href="#153">153</a> </td></tr>
+<tr><td valign=top class="xref">vulntracker</td><td valign=top class="xref"> <a href="#8">8</a>  <a href="#9">9</a>  <a href="#10">10</a>  <a href="#153">153</a> </td></tr>
+</table></td></tr></table></ul>

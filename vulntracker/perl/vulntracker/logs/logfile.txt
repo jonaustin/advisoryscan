@@ -1,0 +1,1622 @@
+Sun May  6 02:26:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'AOL Nullsoft Winamp S3M Module "IN_MOD.DLL" Remote Heap Memory C' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'AOL Nullsoft Winamp IT Module "IN_MOD.DLL" Remote Heap Memory Co' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SECURITY] [DSA 1278-1] New man-db packages fix arbitrary code e' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'LayerOne 2007 - Speaker Line up Announced' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ GLSA 200704-06 ] Evince: Stack overflow in included gv code' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ GLSA 200704-07 ] libwpd: Multiple vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'PHP <= 5.2.1 wbmp file handling integer overflow' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[MajorSecurity Advisory #42]webblizzard CMS - Cross Site Scripti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Nine Vista CVEs, including Microsoft inaccurate Teredo use c' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'CmailServer WebMail <= V.5.3.4 (signup) Remote XSS Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Windows DNS DnssrvQuery Stack Overflow' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] War against Iran: Update from front lines' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.16.07: Akamai Download' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.17.07: McAfee VirusSca' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.17.07: McAfee E-Busine' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Oracle Database Buffer overflow vulnerabilities in p' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.20.07: Check Point Zon' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Apache/PHP REQUEST_METHOD XSS Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Apache Illegal Request Handling Possible XSS Vulnera' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: MyCyberTwin Multiple Cross-Site Scripting Vu' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Google Talk (gTalk) HTML Injection Technique' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 02:26:08 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Undelivered Mail Returned to Sender' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'AOL Nullsoft Winamp S3M Module "IN_MOD.DLL" Remote Heap Memory C' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'AOL Nullsoft Winamp IT Module "IN_MOD.DLL" Remote Heap Memory Co' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SECURITY] [DSA 1278-1] New man-db packages fix arbitrary code e' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'LayerOne 2007 - Speaker Line up Announced' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ GLSA 200704-06 ] Evince: Stack overflow in included gv code' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ GLSA 200704-07 ] libwpd: Multiple vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'PHP <= 5.2.1 wbmp file handling integer overflow' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[MajorSecurity Advisory #42]webblizzard CMS - Cross Site Scripti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Nine Vista CVEs, including Microsoft inaccurate Teredo use c' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'CmailServer WebMail <= V.5.3.4 (signup) Remote XSS Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Windows DNS DnssrvQuery Stack Overflow' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] War against Iran: Update from front lines' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.16.07: Akamai Download' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.17.07: McAfee VirusSca' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.17.07: McAfee E-Busine' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Oracle Database Buffer overflow vulnerabilities in p' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.20.07: Check Point Zon' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Apache/PHP REQUEST_METHOD XSS Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Apache Illegal Request Handling Possible XSS Vulnera' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: MyCyberTwin Multiple Cross-Site Scripting Vu' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Google Talk (gTalk) HTML Injection Technique' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Undelivered Mail Returned to Sender' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'AOL Nullsoft Winamp S3M Module "IN_MOD.DLL" Remote Heap Memory C' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'AOL Nullsoft Winamp IT Module "IN_MOD.DLL" Remote Heap Memory Co' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SECURITY] [DSA 1278-1] New man-db packages fix arbitrary code e' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'LayerOne 2007 - Speaker Line up Announced' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ GLSA 200704-06 ] Evince: Stack overflow in included gv code' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ GLSA 200704-07 ] libwpd: Multiple vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'PHP <= 5.2.1 wbmp file handling integer overflow' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[MajorSecurity Advisory #42]webblizzard CMS - Cross Site Scripti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Nine Vista CVEs, including Microsoft inaccurate Teredo use c' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'CmailServer WebMail <= V.5.3.4 (signup) Remote XSS Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Windows DNS DnssrvQuery Stack Overflow' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] War against Iran: Update from front lines' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.16.07: Akamai Download' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.17.07: McAfee VirusSca' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.17.07: McAfee E-Busine' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Oracle Database Buffer overflow vulnerabilities in p' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.20.07: Check Point Zon' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Apache/PHP REQUEST_METHOD XSS Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Apache Illegal Request Handling Possible XSS Vulnera' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: MyCyberTwin Multiple Cross-Site Scripting Vu' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Google Talk (gTalk) HTML Injection Technique' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:08 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Undelivered Mail Returned to Sender' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'confirm 6e89bb31ae45c7fd0a2eb4bc34f498bca82705eb' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Welcome to the "ISN" mailing list' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Pioneer Press alleges corporate espionage by former publis' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Linux Advisory Watch - April 13th, 2007 ' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Stolen laptop has BofA employee data' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] TJX data theft doesn't deter bargain shoppers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] It's 'too late' to assure security of patient data' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] FBI seizes ChildNet records; CEO fired as more allegations' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] White House E-Mail Probably Not 'Lost Forever'' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Prepared for the worst' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24886] lighttpd "mtime" and "\r\n\r\n\" Denial of Service Vul' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24892] LANDesk Management Suite Alert Service Buffer Overflow' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24897] Gentoo update for xine-lib' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24889] SUSE Update for Multiple Packages' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24911] Red Hat update for squid' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24903] ScramDisk 4 Linux Privilege Escalation Security Issues' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24884] VCDGear Cue File Buffer Overflow Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24898] MiniShare Multiple Connections Denial of Service' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24878] Red Hat update for cups' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24885] Red Hat update for freetype' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:02:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:25 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:25 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:25 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:25 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:25 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:25 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:25 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:25 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:25 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:25 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:27 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:27 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:27 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:27 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:27 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:27 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:27 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:27 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:27 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:27 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:03:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:02 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:14 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:14 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:14 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:14 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:14 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:14 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:14 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:14 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:14 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:04:14 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:38 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:38 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:38 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:38 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:38 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:38 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:38 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:38 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:05:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:12 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:12 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:12 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:12 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:12 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:12 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:12 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:12 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:12 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:12 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:06:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:09 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:11 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:11 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:11 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:11 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:11 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:11 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:11 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:11 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:11 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:11 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:16 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:16 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:16 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:16 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:16 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:16 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:16 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:16 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:16 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:09:16 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:56 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:56 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:56 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:56 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:56 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:56 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:56 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:56 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:56 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:56 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:58 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:58 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:21:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:00 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:00 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:00 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:04 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:22:07 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:10 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:13 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:15 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:18 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:19 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:19 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:19 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:19 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:19 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:19 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:19 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:19 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:19 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:23:22 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:42 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:42 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:42 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:42 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:42 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:42 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 03:25:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:50 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:00:53 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:52 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:55 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:55 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:55 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:55 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:55 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:55 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:55 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:55 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:55 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:55 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:58 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:58 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:58 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:04:58 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:01 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:05:05 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:54 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:54 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:54 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:54 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:54 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:54 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:54 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:54 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:54 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:54 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:57 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:16:59 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:00 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:03 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:03 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:03 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:03 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:03 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:03 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:03 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:03 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:03 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:03 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 04:17:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 12:42:43 2007: Can't locate object method "new" via package "MIME::LITE" (perhaps you forgot to load "MIME::LITE"?) at VulnEmail.pm line 64.
+
+Sun May  6 12:43:08 2007: Can't locate object method "new" via package "MIME::LITE" (perhaps you forgot to load "MIME::LITE"?) at VulnEmail.pm line 64.
+
+Sun May  6 12:45:37 2007: Can't locate object method "new" via package "MIME::LITE" (perhaps you forgot to load "MIME::LITE"?) at VulnEmail.pm line 64.
+
+Sun May  6 15:02:23 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:23 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:23 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:23 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:23 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:23 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:23 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:23 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:23 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:23 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] Microsoft DNS Server Remote Code execution	Exp' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] IMF 2007 - 2nd Call for Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] iDefense Security Advisory 04.16.07: ClamAV CA' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] INVASION OF THE CHILD HACKERS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Vista typographical vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-10 ] Inkscape: Two format string' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:30 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[Full-disclosure] [ GLSA 200704-11 ] Vixie Cron: Denial of Servi' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:32 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Syhunt: Flixster Cross-Site Scripting Vulnerabilitie' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:32 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] Cisco Security Advisory: Default Passwords in NetFlo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Novell eDirecto' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] iDefense Security Advisory 04.26.07: Symantec Norton' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Format String Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Shell Metacharacter Injections' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[VulnWatch] AFFLIB(TM): Multiple Buffer Overflows' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:33 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [VulnWatch] AFFLIB(TM): Time-of-Check-Time-of-Use File Race' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] ICANN board member berates 'woefully unprepared' DHS' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Fighting cyber crime remains an elusive enterprise' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] IT professionals reveal passwords for chocolate' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Zombies infiltrate US military networks' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] SCADA State of Denial' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] 'Storm Trojan' spammers set us up' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Attack code raises Windows DNS zero-day risk' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Data Breach Aided University Phishing Scam' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] EVT '07 Call For Papers' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:36 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[ISN] Researchers: Botnets Getting Beefier' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24896] NMDeluxe "template" Local File Inclusion Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24902] CNStats File Inclusion Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24916] SSH Tectia Server Insecure Permissions' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24894] FileZilla Unspecified Format String Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:40 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24821] Pixaria Gallery "cfg[sys][base_path]" File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24904] LS simple guestbook "message" PHP Code Execution' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24905] Gentoo update for vixie-cron' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24901] rPath update for kernel' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24900] Akamai Download Manager ActiveX Control Buffer Overflo' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sun May  6 15:02:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '[SA24882] MailBee WebMail Pro Cross-Site Scripting Vulnerabiliti' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'witshare 0.9 Remote File Include Vulnerabilitiy' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'UBB.threads (<= 6.1.1) SQL Injection Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Scorp Book <== v1.0 (smilies.php) Remote File Include Exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Gsylvain35 Portail Web Remote File Include Vulnerabilities' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'phpMyAdmin 2.6.1 Local Cross Site Scripting' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Remot File Include In Script Lore v1' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Request It : Song Request System 1.0b - remote file inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'QuizShock 1.6.1 - Cross-Site Scripting Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Mybb Hot Editor Plugin Local File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:39 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'xodagallery Remote Code Execution Vulnerability' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Critical phpwiki c99shell exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:41 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'RE: Critical phpwiki c99shell exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Critical phpwiki c99shell exploit' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'RE: Windows DNS Cache Poisoning by Forwarder DNS Spoofing' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] Cross Domain XMLHttpRequest' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Internet Explorer Crash' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] A Botted Fortune 500 a Day' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:43 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] A Botted Fortune 500 a Day' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Windows DNS Cache Poisoning by Forwarder DNS Spoofing' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] A Botted Fortune 500 a Day' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Windows DNS Cache Poisoning by Forwarder DNS Spoofing' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] A Botted Fortune 500 a Day' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Internet Explorer Crash' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'RE: Windows DNS Cache Poisoning by Forwarder DNS Spoofing' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Linksys WAG200G - Information disclosure' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Windows DNS Cache Poisoning by Forwarder DNS Spoofing' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Internet Explorer Crash' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:44 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Internet Explorer Crash' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Internet Explorer Crash' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Windows DNS Cache Poisoning by Forwarder DNS Spoofing' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Windows DNS Cache Poisoning by Forwarder DNS Spoofing' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: [Full-disclosure] A Botted Fortune 500 a Day' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Windows DNS Cache Poisoning by Forwarder DNS Spoofing' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Windows DNS Cache Poisoning by Forwarder DNS Spoofing' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Internet Explorer Crash' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Internet Explorer Crash' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'RE: Re[2]: Windows DNS Cache Poisoning by Forwarder DNS Spoofing' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Internet Explorer Crash' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:45 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Internet Explorer Crash' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:46 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Internet Explorer Crash' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'RE: Yet another SQL injection framework' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:47 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: gallery >> 1.5.6 Remote File Inclusion' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:48 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: 3Com's TippingPoint Denial of Service' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:48 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: 3Com's TippingPoint Denial of Service' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:49 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Steganos Encrypted Safe NOT so safe' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:51 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Medium security hole affecting DSL-G624T' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:51 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: Medium security hole affecting DSL-G624T' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Tue May  8 17:34:51 2007: insert() - DBD::mysql::st execute failed: Duplicate entry 'Re: iDefense Security Advisory 04.30.07: Cerulean Studios Trilli' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+
+Sat May 12 12:58:06 2007: insert() - DBD::mysql::st execute failed: Duplicate entry '1-5' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+ at /usr/local/share/perl/5.8.8/Rose/DB/Object/MakeMethods/Generic.pm line 4825
+
+Sat May 12 13:12:54 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-5' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+ at /usr/local/share/perl/5.8.8/Rose/DB/Object/MakeMethods/Generic.pm line 4825
+
+Sat May 12 13:16:46 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-571' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+ at /usr/local/share/perl/5.8.8/Rose/DB/Object/MakeMethods/Generic.pm line 4825
+
+Sat May 12 13:27:44 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-571' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+ at /usr/local/share/perl/5.8.8/Rose/DB/Object/MakeMethods/Generic.pm line 4825
+
+Sat May 12 13:31:38 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-571' for key 2 at /usr/local/share/perl/5.8.8/Rose/DB/Object.pm line 1106.
+ at /usr/local/share/perl/5.8.8/Rose/DB/Object/MakeMethods/Generic.pm line 4825
+
+Fri May 18 04:00:49 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-1697' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Mon Jun 18 04:01:00 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-3347' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Wed Jun 27 04:00:23 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-3837' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Thu Aug 30 13:02:19 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-7311' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Fri Aug 31 12:02:52 2007: 
+Wed Sep 19 16:01:35 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-8348' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Fri Sep 21 12:09:44 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-8527' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Fri Sep 21 13:03:16 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-8527' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Sun Oct  7 04:00:51 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-9477' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Thu Oct 25 11:08:55 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-10473' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Thu Oct 25 13:01:11 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-10473' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Fri Nov 30 10:01:52 2007: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-12472' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Mon Jan 21 10:08:25 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-15270' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Mon Feb  4 09:03:07 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '8-16018' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Tue Feb  5 09:01:55 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '8-16098' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Thu Mar  6 13:01:43 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-17881' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Mon Mar 10 19:01:09 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-18104' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Fri Jul 25 01:01:30 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-23740' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Fri Jul 25 01:02:23 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '8-24348' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Thu Aug  7 04:02:35 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '8-25616' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Thu Aug 14 13:01:44 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-25954' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Wed Sep 24 18:22:16 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-27532' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Tue Oct  7 04:03:31 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-28022' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Mon Nov 24 10:43:06 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-30018' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+
+Thu Dec  4 04:03:42 2008: VulnDB->add_user_msgs->$user->profile->save() -- insert() - DBD::mysql::st execute failed: Duplicate entry '1-30568' for key 2 at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object.pm line 1110.
+ at /home/jonaustin/local/share/perl/5.8.4/Rose/DB/Object/MakeMethods/Generic.pm line 5336
+

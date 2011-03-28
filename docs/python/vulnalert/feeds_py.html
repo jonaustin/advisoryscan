@@ -1,0 +1,99 @@
+<html><head><title>./vulnalert/feeds.py</title>
+<!-- html produced by lpy.py, http://www.danbala.com -->
+<!-- this is the standard header -->
+<style>
+<!--
+a:link { color:blue; text-decoration:none }
+a:visited { color:purple; text-decoration:none }
+a:active { color:red; text-decoration:none }
+a:hover { color:red; text-decoration:none }
+-->
+</style>
+<style>
+<--
+H3 {    /* need this for navigator */
+   font: bold 14pt "Verdana", "Arial", "Helvetica" 
+}
+div.code { 
+    background: #e0e0e0;
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+div.doc { 
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+td.doc { 
+    width:600; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+td.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+table.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+td.splitdoc { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+ }
+td.splitcode { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+-->
+</style>
+</head>
+<body><table><tr><td class="doc"><ul><div class="code"><pre><a name="1">   1</a>    <b>from</b> django.contrib.syndication.feeds <b>import</b> Feed
+<a name="2">   2</a>    <b>from</b> models <b>import</b> User, UserProfile
+<a name="3">   3</a>    
+<a name="4">   4</a>    <b>class</b> UserFeeds(Feed):
+<a name="5">   5</a>        <b>def</b> get_object(<b>self</b>, bits):
+<a name="6">   6</a>            <i><font color=green># In case of "/rss/Users/0613/foo/bar/baz/", or other such clutter,
+</font></i><a name="7">   7</a>            <i><font color=green># check that bits has only one member.
+</font></i><a name="8">   8</a>            <b>if</b> len(bits) != 1:
+<a name="9">   9</a>                <b>raise</b> ObjectDoesNotExist
+<a name="10">  10</a>            <b>return</b> User.objects.get(username__exact=bits[0])
+<a name="11">  11</a>    
+<a name="12">  12</a>        <b>def</b> title(<b>self</b>, obj):
+<a name="13">  13</a>            <b>return</b> <font color=darkcyan>"%s's criteria matches"</font> % obj.username
+<a name="14">  14</a>    
+<a name="15">  15</a>        <b>def</b> link(<b>self</b>):
+<a name="16">  16</a>            <b>return</b> <font color=darkcyan>"http://advisoryscan.net"</font>
+<a name="17">  17</a>    
+<a name="18">  18</a>        <b>def</b> item_link(<b>self</b>, obj):
+<a name="19">  19</a>            <b>return</b> <font color=darkcyan>"http://advisoryscan.net/messages/"</font>+str(obj.id)
+<a name="20">  20</a>    
+<a name="21">  21</a>        <b>def</b> description(<b>self</b>, obj):
+<a name="22">  22</a>            <b>return</b> <font color=darkcyan>"Messages matching criteria for %s"</font> % obj.username
+<a name="23">  23</a>    
+<a name="24">  24</a>        <b>def</b> items(<b>self</b>, obj):
+<a name="25">  25</a>            profile = obj.get_profile()
+<a name="26">  26</a>            <b>return</b> profile.messages.all()</pre></div></ul></td></tr></table></body></html><hr><ul><table><tr><td valign=top><table><tr><td valign=top class="xref">Feed</td><td valign=top class="xref"> <a href="#1">1</a>  <a href="#4">4</a> </td></tr>
+<tr><td valign=top class="xref">ObjectDoesNotExist</td><td valign=top class="xref"> <a href="#9">9</a> </td></tr>
+<tr><td valign=top class="xref">User</td><td valign=top class="xref"> <a href="#2">2</a>  <a href="#10">10</a> </td></tr>
+<tr><td valign=top class="xref">UserFeeds</td><td valign=top class="xref"> <a href="#4">4</a> </td></tr>
+<tr><td valign=top class="xref">UserProfile</td><td valign=top class="xref"> <a href="#2">2</a> </td></tr>
+<tr><td valign=top class="xref">all</td><td valign=top class="xref"> <a href="#26">26</a> </td></tr>
+<tr><td valign=top class="xref">bits</td><td valign=top class="xref"> <a href="#5">5</a>  <a href="#8">8</a>  <a href="#10">10</a> </td></tr>
+<tr><td valign=top class="xref">contrib</td><td valign=top class="xref"> <a href="#1">1</a> </td></tr>
+<tr><td valign=top class="xref">description</td><td valign=top class="xref"> <a href="#21">21</a> </td></tr>
+<tr><td valign=top class="xref">django</td><td valign=top class="xref"> <a href="#1">1</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">feeds</td><td valign=top class="xref"> <a href="#1">1</a> </td></tr>
+<tr><td valign=top class="xref">get</td><td valign=top class="xref"> <a href="#10">10</a> </td></tr>
+<tr><td valign=top class="xref">get_object</td><td valign=top class="xref"> <a href="#5">5</a> </td></tr>
+<tr><td valign=top class="xref">get_profile</td><td valign=top class="xref"> <a href="#25">25</a> </td></tr>
+<tr><td valign=top class="xref">id</td><td valign=top class="xref"> <a href="#19">19</a> </td></tr>
+<tr><td valign=top class="xref">item_link</td><td valign=top class="xref"> <a href="#18">18</a> </td></tr>
+<tr><td valign=top class="xref">items</td><td valign=top class="xref"> <a href="#24">24</a> </td></tr>
+<tr><td valign=top class="xref">len</td><td valign=top class="xref"> <a href="#8">8</a> </td></tr>
+<tr><td valign=top class="xref">link</td><td valign=top class="xref"> <a href="#15">15</a> </td></tr>
+<tr><td valign=top class="xref">messages</td><td valign=top class="xref"> <a href="#26">26</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">models</td><td valign=top class="xref"> <a href="#2">2</a> </td></tr>
+<tr><td valign=top class="xref">obj</td><td valign=top class="xref"> <a href="#12">12</a>  <a href="#13">13</a>  <a href="#18">18</a>  <a href="#19">19</a>  <a href="#21">21</a>  <a href="#22">22</a>  <a href="#24">24</a>  <a href="#25">25</a> </td></tr>
+<tr><td valign=top class="xref">objects</td><td valign=top class="xref"> <a href="#10">10</a> </td></tr>
+<tr><td valign=top class="xref">profile</td><td valign=top class="xref"> <a href="#25">25</a>  <a href="#26">26</a> </td></tr>
+<tr><td valign=top class="xref">str</td><td valign=top class="xref"> <a href="#19">19</a> </td></tr>
+<tr><td valign=top class="xref">syndication</td><td valign=top class="xref"> <a href="#1">1</a> </td></tr>
+<tr><td valign=top class="xref">title</td><td valign=top class="xref"> <a href="#12">12</a> </td></tr>
+<tr><td valign=top class="xref">username</td><td valign=top class="xref"> <a href="#13">13</a>  <a href="#22">22</a> </td></tr>
+<tr><td valign=top class="xref">username__exact</td><td valign=top class="xref"> <a href="#10">10</a> </td></tr>
+</table></td></tr></table></ul>

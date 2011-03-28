@@ -1,0 +1,70 @@
+{% extends "base_site.html" %}
+
+{% block stylesheet %}/media/css/forms.css {% endblock stylesheet %}
+
+{% block content %}
+<p>Enter a valid email and password:</p>
+
+{% if error_message %}
+    <p class="errornote"> {{ error_message }} </p>
+{% endif %}
+
+
+<fieldset class="module aligned">
+
+<form action="" method="POST">
+<h2> User Information: </h2>
+    <div class="form-row">
+      {{ form.errors.username }}
+      <label for="id_username" class="required">Username:</label> {{ form.username }}
+      <p class="help">{{ form.username.help_text }}</p>
+    </div>
+
+    <div class="form-row">
+      {{ form.errors.email }}
+      <label for="id_email" class="required">Email:</label> {{ form.email }}
+      <p class="help">{{ email_help_text }}</p>
+    </div>
+
+    <div class="form-row">
+      {{ form.errors.password }}
+      <label for="id_password" class="required">Password:</label> {{ form.password }}
+    </div>
+
+    <div class="form-row">
+      {{ form.errors.password2 }}
+      <label for="id_password2" class="required">Password (again):</label> {{ form.password2 }}
+      <p class="help">Enter the same password as above, for verification.</p>
+    </div>
+
+<h2> Personal Information: </h2>
+    <div class="form-row">
+      {{ form.errors.first_name }}
+      <label for="id_first_name" class="required">First Name:</label> {{ form.first_name }}
+    </div>
+
+    <div class="form-row">
+      {{ form.errors.last_name }}
+      <label for="id_last_name" class="required">Last Name:</label> {{ form.last_name }}
+    </div>
+
+<h2> Other Information: </h2>
+
+    <div class="form-row">
+      {{ form.errors.where_heard }}
+      <label for="id_where_heard" class="required">Where did you hear about {{ site_name }}?:</label> {{ form.where_heard }}
+    </div>
+
+    <div class="submit-row">
+    <label>&nbsp;</label><input type="submit" value="Signup" />
+    </div>
+</form>
+
+</fieldset>
+
+<script type="text/javascript">
+    document.getElementById('id_username').focus()
+</script>
+
+{% endblock content %}
+

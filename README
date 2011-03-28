@@ -1,0 +1,2 @@
+Tool for users of Open Source software where they can subscribe to email or RSS alerts based on phrases (i.e. WordPress 3.1).   
+It has a cron-based, object-oriented Perl 5 backend utilizing Rose ORM which handles retrieval of new advisories, and a Django based frontend 

@@ -1,0 +1,83 @@
+
+#hd #nav {
+    float: right;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 1em;
+    display: inline;
+    width: 98%;
+}
+
+#navsearch {
+    float: left;
+}
+
+#navsearch label {
+    font-weight: normal;
+    color: #8CB85C;
+}
+
+#navsearch input {
+    margin-bottom: 5px;
+}
+
+#navtabs{
+    float: right;
+    margin-top: 5px;
+    margin-left: 4px;
+    padding: 0;
+    background: transparent;
+    voice-family: "\"}\"";
+    voice-family: inherit;
+    padding-left: 5px;
+}
+
+#navtabs ul{
+    font: bold 11px Arial, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+#navtabs li{
+    display:inline;
+    margin:0 2px 0 0;
+    padding:0;
+    text-transform:uppercase;
+}
+
+
+#navtabs a{
+    float:left;
+    color: white;
+    background: #678b3f url(/media/img/color_tabs_left.gif) no-repeat left top;
+    margin:0 2px 0 0;
+    padding:0 0 1px 3px;
+    text-decoration:none;
+    letter-spacing: 1px;
+}
+
+#navtabs a span{
+    float:left;
+    display:block;
+    background: transparent url(/media/img/color_tabs_right.gif) no-repeat right top;
+    padding:4px 9px 2px 6px;
+}
+
+#navtabs a span{
+    float:none;
+}
+
+
+#navtabs a:hover {
+    background-color: #8cb85c;
+}
+
+#navtabs a:hover span{
+    background-color: #8cb85c;
+}
+
+#navtabs #current a, #navtabs #current span{ /*currently selected tab*/
+    background-color: #8cb85c;
+}

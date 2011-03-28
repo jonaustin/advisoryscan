@@ -1,0 +1,54 @@
+#!/bin/sh<br />
+<br />
+# WARNING: rm -rf will be called on this dir, check twice!!<br />
+# use absolute paths<br />
+source_html_dir='/home/jon/projects/code/vulntracker/python/vulntracker/source_html/'<br />
+<br />
+source_dir='/home/jon/projects/code/vulntracker/python/vulntracker/'<br />
+<br />
+# remove current html files<br />
+#find . -iname "*html"|xargs rm<br />
+if [ ! $source_html_dir ];<br />
+then<br />
+    echo "Please define source_html_dir\n";<br />
+else<br />
+    rm -rf ${source_html_dir}/*;<br />
+fi<br />
+<br />
+if [ ! -d $source_html_dir ]; <br />
+then <br />
+    mkdir $source_html_dir; <br />
+fi; <br />
+<br />
+# create new html files<br />
+for n in `find . -iname "*py"`; do python /usr/local/bin/lpy.py $n; done<br />
+<br />
+# create correct dir structure in source_html_dir and move files<br />
+for html_file in `find . -iname "*.html"`; <br />
+do <br />
+    mydir=`dirname $html_file`; <br />
+    if [ $mydir == '.' ];<br />
+    then<br />
+        mydir='';<br />
+    else<br />
+        mydir=`echo $mydir | sed 's#\./##'`;<br />
+    fi<br />
+    mynewdir=${source_html_dir}/$mydir;<br />
+    if [ ! -d $mynewdir ];<br />
+    then<br />
+        mkdir -p $mynewdir;<br />
+    fi<br />
+    # apparently apache is set up on dreamhost to process .py files even if they have .html extension<br />
+    # only mv if *py.html, otherwise cp (template file)<br />
+    myfile=`basename $html_file`;<br />
+    if test `echo $myfile|grep "\.py\.html"`;<br />
+    then<br />
+        myfile=`echo $myfile | sed 's#\.py#_py#'`;<br />
+        mv $html_file ${mynewdir}/$myfile;<br />
+    else<br />
+        cp $html_file $mynewdir;<br />
+    fi<br />
+done<br />
+<br />
+cp source_html.sh ${source_html_dir}/source_html.sh.html<br />
+sed -i ${source_html_dir}/source_html.sh.html -e 's#$#<br />#'<br />

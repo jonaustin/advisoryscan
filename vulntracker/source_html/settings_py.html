@@ -1,0 +1,185 @@
+<html><head><title>./settings.py</title>
+<!-- html produced by lpy.py, http://www.danbala.com -->
+<!-- this is the standard header -->
+<style>
+<!--
+a:link { color:blue; text-decoration:none }
+a:visited { color:purple; text-decoration:none }
+a:active { color:red; text-decoration:none }
+a:hover { color:red; text-decoration:none }
+-->
+</style>
+<style>
+<--
+H3 {    /* need this for navigator */
+   font: bold 14pt "Verdana", "Arial", "Helvetica" 
+}
+div.code { 
+    background: #e0e0e0;
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+div.doc { 
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+td.doc { 
+    width:600; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+td.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+table.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+td.splitdoc { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+ }
+td.splitcode { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+-->
+</style>
+</head>
+<body><table><tr><td class="doc"><ul><div class="code"><pre><a name="1">   1</a>    <i><font color=green># Django settings for vulntracker project.
+</font></i><a name="2">   2</a>    
+<a name="3">   3</a>    DEBUG = False
+<a name="4">   4</a>    TEMPLATE_DEBUG = DEBUG
+<a name="5">   5</a>    
+<a name="6">   6</a>    ADMINS = (
+<a name="7">   7</a>        (<font color=darkcyan>'jon'</font>, <font color=darkcyan>'jon.i.austin@gmail.com'</font>),
+<a name="8">   8</a>        <i><font color=green># ('Your Name', 'your_email@domain.com'),</font></i>
+<a name="9">   9</a>    )
+<a name="10">  10</a>    
+<a name="11">  11</a>    MANAGERS = ADMINS
+<a name="12">  12</a>    
+<a name="13">  13</a>    DATABASE_ENGINE = <font color=darkcyan>'mysql'</font>           <i><font color=green># 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'ado_mssql'.</font></i>
+<a name="14">  14</a>    DATABASE_NAME = <font color=darkcyan>'vulntracker_criteria2'</font>             <i><font color=green># Or path to database file if using sqlite3.</font></i>
+<a name="15">  15</a>    DATABASE_USER = <font color=darkcyan>'root'</font>             <i><font color=green># Not used with sqlite3.</font></i>
+<a name="16">  16</a>    DATABASE_PASSWORD = <font color=darkcyan>'1984'</font>         <i><font color=green># Not used with sqlite3.</font></i>
+<a name="17">  17</a>    DATABASE_HOST = <font color=darkcyan>''</font>             <i><font color=green># Set to empty string for localhost. Not used with sqlite3.</font></i>
+<a name="18">  18</a>    DATABASE_PORT = <font color=darkcyan>''</font>             <i><font color=green># Set to empty string for default. Not used with sqlite3.</font></i>
+<a name="19">  19</a>    
+<a name="20">  20</a>    <i><font color=green># Local time zone for this installation. Choices can be found here:
+</font></i><a name="21">  21</a>    <i><font color=green># http://www.postgresql.org/docs/8.1/static/datetime-keywords.html#DATETIME-TIMEZONE-SET-TABLE
+</font></i><a name="22">  22</a>    <i><font color=green># although not all variations may be possible on all operating systems.
+</font></i><a name="23">  23</a>    <i><font color=green># If running in a Windows environment this must be set to the same as your
+</font></i><a name="24">  24</a>    <i><font color=green># system time zone.
+</font></i><a name="25">  25</a>    TIME_ZONE = <font color=darkcyan>'America/Los_Angeles'</font>
+<a name="26">  26</a>    
+<a name="27">  27</a>    <i><font color=green># Language code for this installation. All choices can be found here:
+</font></i><a name="28">  28</a>    <i><font color=green># http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
+</font></i><a name="29">  29</a>    <i><font color=green># http://blogs.law.harvard.edu/tech/stories/storyReader$15
+</font></i><a name="30">  30</a>    LANGUAGE_CODE = <font color=darkcyan>'en-us'</font>
+<a name="31">  31</a>    
+<a name="32">  32</a>    SITE_ID = 1
+<a name="33">  33</a>    
+<a name="34">  34</a>    <i><font color=green># If you set this to False, Django will make some optimizations so as not
+</font></i><a name="35">  35</a>    <i><font color=green># to load the internationalization machinery.
+</font></i><a name="36">  36</a>    USE_I18N = False
+<a name="37">  37</a>    
+<a name="38">  38</a>    <i><font color=green># Absolute path to the directory that holds media.
+</font></i><a name="39">  39</a>    <i><font color=green># Example: "/home/media/media.lawrence.com/"
+</font></i><a name="40">  40</a>    MEDIA_ROOT = <font color=darkcyan>'/home/jon/projects/code/vulntracker/python/vulntracker/media/'</font>
+<a name="41">  41</a>    
+<a name="42">  42</a>    <i><font color=green># URL that handles the media served from MEDIA_ROOT.
+</font></i><a name="43">  43</a>    <i><font color=green># Example: "http://media.lawrence.com"
+</font></i><a name="44">  44</a>    MEDIA_URL = <font color=darkcyan>'localhost'</font>
+<a name="45">  45</a>    
+<a name="46">  46</a>    <i><font color=green># URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
+</font></i><a name="47">  47</a>    <i><font color=green># trailing slash.
+</font></i><a name="48">  48</a>    <i><font color=green># Examples: "http://foo.com/media/", "/media/".
+</font></i><a name="49">  49</a>    ADMIN_MEDIA_PREFIX = <font color=darkcyan>'/media/'</font>
+<a name="50">  50</a>    
+<a name="51">  51</a>    <i><font color=green># Make this unique, and don't share it with anybody.
+</font></i><a name="52">  52</a>    SECRET_KEY = <font color=darkcyan>'adlkfj#%#$&amp;KJ%L@#K$JL#K$J3452l345jl3$%@#%$Lj='</font>
+<a name="53">  53</a>    
+<a name="54">  54</a>    <i><font color=green># List of callables that know how to import templates from various sources.
+</font></i><a name="55">  55</a>    TEMPLATE_LOADERS = (
+<a name="56">  56</a>        <font color=darkcyan>'django.template.loaders.filesystem.load_template_source'</font>,
+<a name="57">  57</a>        <font color=darkcyan>'django.template.loaders.app_directories.load_template_source'</font>,
+<a name="58">  58</a>    <i><font color=green>#     'django.template.loaders.eggs.load_template_source',</font></i>
+<a name="59">  59</a>    )
+<a name="60">  60</a>    
+<a name="61">  61</a>    MIDDLEWARE_CLASSES = (
+<a name="62">  62</a>        <font color=darkcyan>'django.middleware.common.CommonMiddleware'</font>,
+<a name="63">  63</a>        <font color=darkcyan>'django.contrib.sessions.middleware.SessionMiddleware'</font>,
+<a name="64">  64</a>        <font color=darkcyan>'django.contrib.auth.middleware.AuthenticationMiddleware'</font>,
+<a name="65">  65</a>        <font color=darkcyan>'django.middleware.doc.XViewMiddleware'</font>,
+<a name="66">  66</a>    )
+<a name="67">  67</a>    
+<a name="68">  68</a>    ROOT_URLCONF = <font color=darkcyan>'vulntracker.urls'</font>
+<a name="69">  69</a>    
+<a name="70">  70</a>    TEMPLATE_DIRS = (
+<a name="71">  71</a>        <i><font color=green># Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".</font></i>
+<a name="72">  72</a>        <i><font color=green># Always use forward slashes, even on Windows.</font></i>
+<a name="73">  73</a>        <i><font color=green># Don't forget to use absolute paths, not relative paths.</font></i>
+<a name="74">  74</a>        <font color=darkcyan>'/home/jon/projects/code/vulntracker/python/vulntracker/templates'</font>
+<a name="75">  75</a>    )
+<a name="76">  76</a>    
+<a name="77">  77</a>    INSTALLED_APPS = (
+<a name="78">  78</a>        <font color=darkcyan>'django.contrib.auth'</font>,
+<a name="79">  79</a>        <font color=darkcyan>'django.contrib.contenttypes'</font>,
+<a name="80">  80</a>        <font color=darkcyan>'django.contrib.sessions'</font>,
+<a name="81">  81</a>        <font color=darkcyan>'django.contrib.sites'</font>,
+<a name="82">  82</a>        <font color=darkcyan>'django.contrib.admin'</font>,
+<a name="83">  83</a>        <font color=darkcyan>'vulntracker.vulnalert'</font>,
+<a name="84">  84</a>    )
+<a name="85">  85</a>    
+<a name="86">  86</a>    AUTH_PROFILE_MODULE = <font color=darkcyan>"vulnalert.UserProfile"</font>
+<a name="87">  87</a>    
+<a name="88">  88</a>    AUTHENTICATION_BACKENDS = ( <font color=darkcyan>'vulntracker.auth.auth_email.EmailBackend'</font>, )
+<a name="89">  89</a>    
+<a name="90">  90</a>    INTERNAL_IPS = (<font color=darkcyan>'0.0.0.0'</font>,)
+<a name="91">  91</a>    
+<a name="92">  92</a>    <i><font color=green># override globals
+</font></i><a name="93">  93</a>    TEMPLATE_CONTEXT_PROCESSORS = (
+<a name="94">  94</a>        <font color=darkcyan>'django.core.context_processors.auth'</font>,
+<a name="95">  95</a>        <font color=darkcyan>'django.core.context_processors.debug'</font>,
+<a name="96">  96</a>        <font color=darkcyan>'django.core.context_processors.i18n'</font>,
+<a name="97">  97</a>        <font color=darkcyan>'vulntracker.vulnalert.context_processors.globals'</font>,
+<a name="98">  98</a>    <i><font color=green>#    'django.core.context_processors.request',</font></i>
+<a name="99">  99</a>    )
+<a name="100"> 100</a>    
+<a name="101"> 101</a>    SESSION_EXPIRE_AT_BROWSER_CLOSE = True   <i><font color=green># Whether sessions expire when a user closes his browser.</font></i>
+<a name="102"> 102</a>    
+<a name="103"> 103</a>    <i><font color=green># my settings
+</font></i><a name="104"> 104</a>    SIMPLE_CRITERIA_TYPES = (<font color=darkcyan>'name'</font>, <font color=darkcyan>'version'</font>)
+<a name="105"> 105</a>    
+<a name="106"> 106</a>    SITE_ROOT = <font color=darkcyan>"/vulntracker/"</font>
+<a name="107"> 107</a>    
+<a name="108"> 108</a>    SITE_NAME = <font color=darkcyan>"advisoryscan.net"</font></pre></div></ul></td></tr></table></body></html><hr><ul><table><tr><td valign=top><table><tr><td valign=top class="xref">ADMINS</td><td valign=top class="xref"> <a href="#6">6</a>  <a href="#11">11</a> </td></tr>
+<tr><td valign=top class="xref">ADMIN_MEDIA_PREFIX</td><td valign=top class="xref"> <a href="#49">49</a> </td></tr>
+<tr><td valign=top class="xref">AUTHENTICATION_BACKENDS</td><td valign=top class="xref"> <a href="#88">88</a> </td></tr>
+<tr><td valign=top class="xref">AUTH_PROFILE_MODULE</td><td valign=top class="xref"> <a href="#86">86</a> </td></tr>
+<tr><td valign=top class="xref">DATABASE_ENGINE</td><td valign=top class="xref"> <a href="#13">13</a> </td></tr>
+<tr><td valign=top class="xref">DATABASE_HOST</td><td valign=top class="xref"> <a href="#17">17</a> </td></tr>
+<tr><td valign=top class="xref">DATABASE_NAME</td><td valign=top class="xref"> <a href="#14">14</a> </td></tr>
+<tr><td valign=top class="xref">DATABASE_PASSWORD</td><td valign=top class="xref"> <a href="#16">16</a> </td></tr>
+<tr><td valign=top class="xref">DATABASE_PORT</td><td valign=top class="xref"> <a href="#18">18</a> </td></tr>
+<tr><td valign=top class="xref">DATABASE_USER</td><td valign=top class="xref"> <a href="#15">15</a> </td></tr>
+<tr><td valign=top class="xref">DEBUG</td><td valign=top class="xref"> <a href="#3">3</a>  <a href="#4">4</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">False</td><td valign=top class="xref"> <a href="#3">3</a>  <a href="#36">36</a> </td></tr>
+<tr><td valign=top class="xref">INSTALLED_APPS</td><td valign=top class="xref"> <a href="#77">77</a> </td></tr>
+<tr><td valign=top class="xref">INTERNAL_IPS</td><td valign=top class="xref"> <a href="#90">90</a> </td></tr>
+<tr><td valign=top class="xref">LANGUAGE_CODE</td><td valign=top class="xref"> <a href="#30">30</a> </td></tr>
+<tr><td valign=top class="xref">MANAGERS</td><td valign=top class="xref"> <a href="#11">11</a> </td></tr>
+<tr><td valign=top class="xref">MEDIA_ROOT</td><td valign=top class="xref"> <a href="#40">40</a> </td></tr>
+<tr><td valign=top class="xref">MEDIA_URL</td><td valign=top class="xref"> <a href="#44">44</a> </td></tr>
+<tr><td valign=top class="xref">MIDDLEWARE_CLASSES</td><td valign=top class="xref"> <a href="#61">61</a> </td></tr>
+<tr><td valign=top class="xref">ROOT_URLCONF</td><td valign=top class="xref"> <a href="#68">68</a> </td></tr>
+<tr><td valign=top class="xref">SECRET_KEY</td><td valign=top class="xref"> <a href="#52">52</a> </td></tr>
+<tr><td valign=top class="xref">SESSION_EXPIRE_AT_BROWSER_CLOSE</td><td valign=top class="xref"> <a href="#101">101</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">SIMPLE_CRITERIA_TYPES</td><td valign=top class="xref"> <a href="#104">104</a> </td></tr>
+<tr><td valign=top class="xref">SITE_ID</td><td valign=top class="xref"> <a href="#32">32</a> </td></tr>
+<tr><td valign=top class="xref">SITE_NAME</td><td valign=top class="xref"> <a href="#108">108</a> </td></tr>
+<tr><td valign=top class="xref">SITE_ROOT</td><td valign=top class="xref"> <a href="#106">106</a> </td></tr>
+<tr><td valign=top class="xref">TEMPLATE_CONTEXT_PROCESSORS</td><td valign=top class="xref"> <a href="#93">93</a> </td></tr>
+<tr><td valign=top class="xref">TEMPLATE_DEBUG</td><td valign=top class="xref"> <a href="#4">4</a> </td></tr>
+<tr><td valign=top class="xref">TEMPLATE_DIRS</td><td valign=top class="xref"> <a href="#70">70</a> </td></tr>
+<tr><td valign=top class="xref">TEMPLATE_LOADERS</td><td valign=top class="xref"> <a href="#55">55</a> </td></tr>
+<tr><td valign=top class="xref">TIME_ZONE</td><td valign=top class="xref"> <a href="#25">25</a> </td></tr>
+<tr><td valign=top class="xref">True</td><td valign=top class="xref"> <a href="#101">101</a> </td></tr>
+<tr><td valign=top class="xref">USE_I18N</td><td valign=top class="xref"> <a href="#36">36</a> </td></tr>
+</table></td></tr></table></ul>

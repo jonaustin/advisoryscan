@@ -1,0 +1,62 @@
+{% extends "base_site.html" %}
+
+{% block bodyclasses %}prefs{% endblock %}
+
+{% block stylesheet %}/media/css/forms.css{% endblock stylesheet %}
+
+{% block prefs_id %}current{% endblock %}
+
+{% block content %}
+
+{% if error_message %}
+    <p class="errornote"> {{ error_message }} </p>
+{% endif %}
+
+<form action="" method="POST">
+    <h2>Simple Preferences:</h2>
+        {{form.prefs.errors}}
+
+    <fieldset class="module">
+        <h2> Preference Type </h2>
+        <div class="form-row">
+            Switch To: <a href="{{ advanced_prefs_url}}">Advanced Prefs</a>
+        </div>
+        <div class="form-row">
+        {{ forms.prefs.enable }} <span class="small">Enable Simple Preferences </span><span class='tiny'>(this will disable criteria from Advanced Preferences)</span>
+        </div>
+    </fieldset>
+
+    <fieldset class="module">
+        <h2>Select Source(s):</h2>
+            <div class="form-row plainlist">
+                {{ forms.prefs.sources }}
+            </div>
+    </fieldset>
+
+    <fieldset class="module">
+        <h2> Select Alert Format(s): </h2>
+        <div class="form-row plainlist">
+            {{ forms.prefs.alert_methods }}
+        </div>
+    </fieldset>
+
+    <fieldset class="module">
+        <h2>Select Criteria:</h2>
+        {% for criteria in forms.criteria_list %}
+            <div class="form-row">
+            {{criteria.errors}}
+            <p><label for="id_{{criteria.prefix}}-value">Product/Application Name Contains:</label> {{ criteria.value}}</p>
+            </div>
+        {% endfor %}
+        <div class="form-row">
+            <p><label for="id_criteria_name_new-value">Product/Application Name Contains:</label> <input id="id_criteria_name_new-value" type="text" name="criteria_name_new-value" value="" maxlength="50" /></p>
+    </fieldset>
+
+    <div class="submit-row">
+        <label>&nbsp;</label><input type="submit" value="Set Preferences" />
+    </div>
+
+</form>
+
+{% endblock content %}
+

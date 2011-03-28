@@ -1,0 +1,133 @@
+<html><head><title>./vulnalert/util.py</title>
+<!-- html produced by lpy.py, http://www.danbala.com -->
+<!-- this is the standard header -->
+<style>
+<!--
+a:link { color:blue; text-decoration:none }
+a:visited { color:purple; text-decoration:none }
+a:active { color:red; text-decoration:none }
+a:hover { color:red; text-decoration:none }
+-->
+</style>
+<style>
+<--
+H3 {    /* need this for navigator */
+   font: bold 14pt "Verdana", "Arial", "Helvetica" 
+}
+div.code { 
+    background: #e0e0e0;
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+div.doc { 
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+td.doc { 
+    width:600; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+td.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+table.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+td.splitdoc { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+ }
+td.splitcode { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+-->
+</style>
+</head>
+<body><table><tr><td class="doc"><ul><div class="code"><pre><a name="1">   1</a>    <font color=darkcyan>"""
+        Utility Functions
+        """</font>
+
+<a name="4">   4</a>    
+<a name="5">   5</a>    <i><font color=green>### From the Python Cookbook
+</font></i><a name="6">   6</a>    <i><font color=green>## Generate a human readable 'random' password
+</font></i><a name="7">   7</a>    <i><font color=green>## password  will be generated in the form 'word'+digits+'word' 
+</font></i><a name="8">   8</a>    <i><font color=green>## eg.,nice137pass
+</font></i><a name="9">   9</a>    <i><font color=green>## parameters: number of 'characters' , number of 'digits'
+</font></i><a name="10">  10</a>    <i><font color=green>## Pradeep Kishore Gowda &lt;pradeep at btbytes.com >
+</font></i><a name="11">  11</a>    <i><font color=green>## License : GPL 
+</font></i><a name="12">  12</a>    <i><font color=green>## Date : 2005.April.15
+</font></i><a name="13">  13</a>    <i><font color=green>## Revision 1.2 
+</font></i><a name="14">  14</a>    <i><font color=green>## ChangeLog: 
+</font></i><a name="15">  15</a>    <i><font color=green>## 1.1 - fixed typos 
+</font></i><a name="16">  16</a>    <i><font color=green>## 1.2 - renamed functions _apart &amp; _npart to a_part &amp; n_part as zope does not allow functions to 
+</font></i><a name="17">  17</a>    <i><font color=green>## start with _
+</font></i><a name="18">  18</a>    
+<a name="19">  19</a>    <b>def</b> nicepass(alpha=6,numeric=2):
+<a name="20">  20</a>        <font color=darkcyan>"""
+            returns a human-readble password (say rol86din instead of 
+            a difficult to remember K8Yn9muL ) 
+            """</font>
+
+<a name="24">  24</a>        <b>import</b> string
+<a name="25">  25</a>        <b>import</b> random
+<a name="26">  26</a>        vowels = [<font color=darkcyan>'a'</font>,<font color=darkcyan>'e'</font>,<font color=darkcyan>'i'</font>,<font color=darkcyan>'o'</font>,<font color=darkcyan>'u'</font>]
+<a name="27">  27</a>        consonants = [a <b>for</b> a <b>in</b> string.ascii_lowercase <b>if</b> a <b>not</b> <b>in</b> vowels]
+<a name="28">  28</a>        digits = string.digits
+<a name="29">  29</a>        
+<a name="30">  30</a>        <i><font color=green>####utility functions
+</font></i><a name="31">  31</a>        <b>def</b> a_part(slen):
+<a name="32">  32</a>            ret = <font color=darkcyan>''</font>
+<a name="33">  33</a>            <b>for</b> i <b>in</b> range(slen):			
+<a name="34">  34</a>                <b>if</b> i%2 ==0:
+<a name="35">  35</a>                    randid = random.randint(0,20) <i><font color=green>#number of consonants</font></i>
+<a name="36">  36</a>                    ret += consonants[randid]
+<a name="37">  37</a>                <b>else</b>:
+<a name="38">  38</a>                    randid = random.randint(0,4) <i><font color=green>#number of vowels</font></i>
+<a name="39">  39</a>                    ret += vowels[randid]
+<a name="40">  40</a>            <b>return</b> ret
+<a name="41">  41</a>        
+<a name="42">  42</a>        <b>def</b> n_part(slen):
+<a name="43">  43</a>            ret = <font color=darkcyan>''</font>
+<a name="44">  44</a>            <b>for</b> i <b>in</b> range(slen):
+<a name="45">  45</a>                randid = random.randint(0,9) <i><font color=green>#number of digits</font></i>
+<a name="46">  46</a>                ret += digits[randid]
+<a name="47">  47</a>            <b>return</b> ret
+<a name="48">  48</a>            
+<a name="49">  49</a>        <i><font color=green>#### 	
+</font></i><a name="50">  50</a>        fpl = alpha/2		
+<a name="51">  51</a>        <b>if</b> alpha % 2 :
+<a name="52">  52</a>            fpl = int(alpha/2) + 1 					
+<a name="53">  53</a>        lpl = alpha - fpl	
+<a name="54">  54</a>        
+<a name="55">  55</a>        start = a_part(fpl)
+<a name="56">  56</a>        mid = n_part(numeric)
+<a name="57">  57</a>        end = a_part(lpl)
+<a name="58">  58</a>        
+<a name="59">  59</a>        <b>return</b> <font color=darkcyan>"%s%s%s"</font> % (start,mid,end)
+<a name="60">  60</a>        
+<a name="61">  61</a>    <b>if</b> __name__ == <font color=darkcyan>"__main__"</font>:
+<a name="62">  62</a>        <b>print</b> nicepass(6,2)</pre></div></ul></td></tr></table></body></html><hr><ul><table><tr><td valign=top><table><tr><td valign=top class="xref">__name__</td><td valign=top class="xref"> <a href="#61">61</a> </td></tr>
+<tr><td valign=top class="xref">a</td><td valign=top class="xref"> <a href="#27">27</a> </td></tr>
+<tr><td valign=top class="xref">a_part</td><td valign=top class="xref"> <a href="#31">31</a>  <a href="#55">55</a>  <a href="#57">57</a> </td></tr>
+<tr><td valign=top class="xref">alpha</td><td valign=top class="xref"> <a href="#19">19</a>  <a href="#50">50</a>  <a href="#51">51</a>  <a href="#52">52</a>  <a href="#53">53</a> </td></tr>
+<tr><td valign=top class="xref">ascii_lowercase</td><td valign=top class="xref"> <a href="#27">27</a> </td></tr>
+<tr><td valign=top class="xref">consonants</td><td valign=top class="xref"> <a href="#27">27</a>  <a href="#36">36</a> </td></tr>
+<tr><td valign=top class="xref">digits</td><td valign=top class="xref"> <a href="#28">28</a>  <a href="#46">46</a> </td></tr>
+<tr><td valign=top class="xref">end</td><td valign=top class="xref"> <a href="#57">57</a>  <a href="#59">59</a> </td></tr>
+<tr><td valign=top class="xref">fpl</td><td valign=top class="xref"> <a href="#50">50</a>  <a href="#52">52</a>  <a href="#53">53</a>  <a href="#55">55</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">i</td><td valign=top class="xref"> <a href="#33">33</a>  <a href="#34">34</a>  <a href="#44">44</a> </td></tr>
+<tr><td valign=top class="xref">int</td><td valign=top class="xref"> <a href="#52">52</a> </td></tr>
+<tr><td valign=top class="xref">lpl</td><td valign=top class="xref"> <a href="#53">53</a>  <a href="#57">57</a> </td></tr>
+<tr><td valign=top class="xref">mid</td><td valign=top class="xref"> <a href="#56">56</a>  <a href="#59">59</a> </td></tr>
+<tr><td valign=top class="xref">n_part</td><td valign=top class="xref"> <a href="#42">42</a>  <a href="#56">56</a> </td></tr>
+<tr><td valign=top class="xref">nicepass</td><td valign=top class="xref"> <a href="#19">19</a>  <a href="#62">62</a> </td></tr>
+<tr><td valign=top class="xref">numeric</td><td valign=top class="xref"> <a href="#19">19</a>  <a href="#56">56</a> </td></tr>
+<tr><td valign=top class="xref">randid</td><td valign=top class="xref"> <a href="#35">35</a>  <a href="#36">36</a>  <a href="#38">38</a>  <a href="#39">39</a>  <a href="#45">45</a>  <a href="#46">46</a> </td></tr>
+<tr><td valign=top class="xref">randint</td><td valign=top class="xref"> <a href="#35">35</a>  <a href="#38">38</a>  <a href="#45">45</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">random</td><td valign=top class="xref"> <a href="#25">25</a>  <a href="#35">35</a>  <a href="#38">38</a>  <a href="#45">45</a> </td></tr>
+<tr><td valign=top class="xref">range</td><td valign=top class="xref"> <a href="#33">33</a>  <a href="#44">44</a> </td></tr>
+<tr><td valign=top class="xref">ret</td><td valign=top class="xref"> <a href="#32">32</a>  <a href="#36">36</a>  <a href="#39">39</a>  <a href="#40">40</a>  <a href="#43">43</a>  <a href="#46">46</a>  <a href="#47">47</a> </td></tr>
+<tr><td valign=top class="xref">slen</td><td valign=top class="xref"> <a href="#31">31</a>  <a href="#33">33</a>  <a href="#42">42</a>  <a href="#44">44</a> </td></tr>
+<tr><td valign=top class="xref">start</td><td valign=top class="xref"> <a href="#55">55</a>  <a href="#59">59</a> </td></tr>
+<tr><td valign=top class="xref">string</td><td valign=top class="xref"> <a href="#24">24</a>  <a href="#27">27</a>  <a href="#28">28</a> </td></tr>
+<tr><td valign=top class="xref">vowels</td><td valign=top class="xref"> <a href="#26">26</a>  <a href="#27">27</a>  <a href="#39">39</a> </td></tr>
+</table></td></tr></table></ul>

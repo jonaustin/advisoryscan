@@ -1,0 +1,12 @@
+{% extends "base_site.html" %}
+
+
+{% block content %}
+
+{{ object.subject|escape }} <br /><br /
+
+<pre>
+{{ object.body|escape}}
+</pre>
+
+{% endblock content %}

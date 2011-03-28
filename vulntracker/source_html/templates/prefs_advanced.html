@@ -1,0 +1,80 @@
+{% extends "base_site.html" %}
+
+{% block prefs_id %}current{% endblock %}
+
+{% block bodyclasses %}prefs{% endblock %}
+
+{% block stylesheet %}/media/css/forms.css{% endblock stylesheet %}
+
+{% block content %}
+
+{% if error_message %}
+    <p class="errornote"> {{ error_message }} </p>
+{% endif %}
+
+<form action="" method="POST">
+    <h2>Advanced Preferences:</h2>
+
+    <fieldset class="module">
+        <h2> Preference Type </h2>
+        <div class="form-row">
+            Switch To: <a href="{{ simple_prefs_url}}">Simple Prefs</a>
+        </div>
+        <div class="form-row">
+        {{ forms.prefs.enable }} <span class="small">Enable Advanced Preferences </span><span class='tiny'>(this will disable criteria from Simple Preferences)</span>
+        </div>
+    </fieldset>
+
+    <fieldset class="module">
+        <h2>Select Source(s):</h2>
+            <div class="form-row plainlist">
+                {{ forms.prefs.sources }}
+            </div>
+    </fieldset>
+
+    <fieldset class="module">
+    <h2> Select Alert Format(s): </h2>
+        <div class="form-row plainlist">
+            {{ forms.prefs.alert_methods }}
+        </div>
+    </fieldset>
+
+    <fieldset class="module aligned">
+    <h2>Select Criteria:</h2>
+        <div class="small">
+        For the correct formattting of a regular expression query, please see <a href="http://dev.mysql.com/doc/refman/5.0/en/regexp.html">http://dev.mysql.com/doc/refman/5.0/en/regexp.html</a>
+        </div>
+        {% for criteria in forms.criteria_list %}
+            <div class="form-row">
+              {{ criteria.errors }}
+              {{ criteria.type }} {{ criteria.qualifier }} {{ criteria.value }}
+            </div>
+        {% endfor %}
+        <div class="form-row">
+            <select name="criteria_new-type" id="id_criteria_new-type">
+                <option value="1">subject</option>
+                <option value="2">message body</option>
+            </select> 
+            <select name="criteria_new-qualifier" id="id_criteria_new-qualifier">
+                <option value="1" selected="selected">contains</option>
+                <option value="2">equal</option>
+                <option value="3">starts with</option>
+                <option value="4">ends with</option>
+                <option value="5">does not start with</option>
+                <option value="6">does not contain</option>
+                <option value="7">not equal to</option>
+                <option value="8">regular expression</option>
+            </select> 
+            <input id="id_criteria_new-value" type="text" name="criteria_new-value" value="" maxlength="50" />
+        </div>
+
+        <!-- add new criteria button (only contains or regexp) - javascript?-->
+    </fieldset>
+        <div class="submit-row">
+            <label>&nbsp;</label><input type="submit" value="Set Preferences" />
+        </div>
+</form>
+
+
+{% endblock content %}
+

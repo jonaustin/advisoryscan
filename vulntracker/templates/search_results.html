@@ -1,0 +1,15 @@
+{% extends "base_site.html" %}
+
+{% block messages_id %}current{% endblock %}
+
+{% block content %}
+
+{% if db_messages %}
+{% for message in db_messages %}
+ <a href="{{site_root}}messages/{{ message.id }}">{{ message.subject }} </a> <br />
+{% endfor %}
+{% else %}
+<div class="center"> Sorry, no messages were found matching that search.</div>
+{% endif %}
+
+{% endblock content %}

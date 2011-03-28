@@ -1,0 +1,15 @@
+{% extends "base_site.html" %}
+
+{% block messages_id %}current{% endblock %}
+
+{% block content %}
+
+{% if user_messages %}
+{% for user_message in user_messages %}
+ <a href="{{site_root}}messages/{{ user_message.id }}">{{ user_message.subject }} </a> <br />
+{% endfor %}
+{% else %}
+{{ mess }}
+{% endif %}
+
+{% endblock content %}

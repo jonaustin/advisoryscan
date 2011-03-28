@@ -1,0 +1,49 @@
+{% extends "base_site.html" %}
+
+{% block about_id %}current{% endblock %}
+
+{% block content %}
+
+
+<div class="center">
+<h2> About this Site </h2>
+</div>
+
+<h5> Purpose: </h5>
+
+<p>
+This site is meant to be used as a tool for users of open source and sometimes commercial software who must keep constant track of new security bugs as soon as they appear in the wild.
+</p>
+
+<h5> Audience: </h5>
+
+<p>
+System Administrators who manage web based software are the primary audience for this tool, although it may be useful for anyone who wishes to keep track of 0-day advisories in their own hosted applications.
+</p>
+
+<h5> Other Thoughts: </h5>
+
+<p>This tool was primarily written to track 0-day advisories on the BugTraq mailing list for php based web applications that I administer. However as it simply scans any number of different mailing lists based on very flexible criteria there are many other possible uses. At the moment however I would like to keep it security oriented.
+</p>
+
+<p>
+My idea was that since many of these exploits consist of XSS, file include or SQL Injection which are generally fairly simple to fix by even a beginning programmer, but may not be fixed by the official provider for some time, it would be useful to have a way to scan bugtraq and other mailing lists and be alerted as soon as these exploits are discovered.
+</p>
+
+<p>
+Even given the informal nature of these postings this is quite accurate as the vast majority of posters will put the application/project/component name in the subject of the message.
+</p>
+
+<h4> Alert Methods </h4>
+
+<h5> RSS: </h5> Your own RSS feed at {{ site_name }}/feeds/users/yourname that may be used with Google Reader, My Yahoo, Bloglines, etc. Updated hourly.
+
+<h5> E-Mail </h5> Receive a daily digest of all messages that match your criteria
+
+<h4> Current Mailing Lists </h4>
+
+{% for source in sources %}
+<h5><a href="{{source.url}}" name="{{source.anchor}}">{{ source.name }}</a>:</h5> {{source.desc}} </br>
+{% endfor %}
+
+{% endblock content %}

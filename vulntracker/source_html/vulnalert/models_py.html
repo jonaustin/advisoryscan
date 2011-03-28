@@ -1,0 +1,308 @@
+<html><head><title>./vulnalert/models.py</title>
+<!-- html produced by lpy.py, http://www.danbala.com -->
+<!-- this is the standard header -->
+<style>
+<!--
+a:link { color:blue; text-decoration:none }
+a:visited { color:purple; text-decoration:none }
+a:active { color:red; text-decoration:none }
+a:hover { color:red; text-decoration:none }
+-->
+</style>
+<style>
+<--
+H3 {    /* need this for navigator */
+   font: bold 14pt "Verdana", "Arial", "Helvetica" 
+}
+div.code { 
+    background: #e0e0e0;
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+div.doc { 
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+td.doc { 
+    width:600; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+td.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+table.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+td.splitdoc { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+ }
+td.splitcode { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+-->
+</style>
+</head>
+<body><table><tr><td class="doc"><ul><div class="code"><pre><a name="1">   1</a>    <font color=darkcyan>""" 
+            Database models for ORM
+        """</font>
+
+<a name="4">   4</a>    
+<a name="5">   5</a>    <b>from</b> django.db <b>import</b> models
+<a name="6">   6</a>    <b>from</b> django.contrib.auth.models <b>import</b> User
+<a name="7">   7</a>    
+<a name="8">   8</a>    
+<a name="9">   9</a>    <b>class</b> MessageType(models.Model):
+<a name="10">  10</a>        name = models.CharField(<font color=darkcyan>"name of message type"</font>, maxlength=25, unique=True)
+<a name="11">  11</a>        desc = models.TextField()
+<a name="12">  12</a>    
+<a name="13">  13</a>        <b>class</b> Meta:
+<a name="14">  14</a>            db_table = <font color=darkcyan>'message_type'</font>
+<a name="15">  15</a>    
+<a name="16">  16</a>        <b>def</b> __str__(<b>self</b>):
+<a name="17">  17</a>            <b>return</b> <font color=darkcyan>"%s"</font> % (<b>self</b>.name)
+<a name="18">  18</a>    
+<a name="19">  19</a>        <b>class</b> Admin:
+<a name="20">  20</a>            <b>pass</b>
+<a name="21">  21</a>    
+<a name="22">  22</a>    <b>class</b> Source(models.Model):
+<a name="23">  23</a>        name            = models.CharField(maxlength=50)
+<a name="24">  24</a>        email           = models.EmailField(maxlength=50)
+<a name="25">  25</a>        email_password  = models.CharField(maxlength=50)
+<a name="26">  26</a>        email_server    = models.CharField(maxlength=50)
+<a name="27">  27</a>        url             = models.URLField(blank=True, maxlength=100)
+<a name="28">  28</a>        desc            = models.CharField(blank=True, maxlength=150)
+<a name="29">  29</a>        desc_long       = models.TextField(blank=True)
+<a name="30">  30</a>        message_type    = models.ForeignKey(MessageType)
+<a name="31">  31</a>    
+<a name="32">  32</a>        <b>def</b> __str__(<b>self</b>):
+<a name="33">  33</a>            <b>return</b> <font color=darkcyan>"%s"</font> % (<b>self</b>.name) 
+<a name="34">  34</a>    
+<a name="35">  35</a>        <b>class</b> Meta:
+<a name="36">  36</a>            db_table        = <font color=darkcyan>'source'</font>
+<a name="37">  37</a>            unique_together = ( (<font color=darkcyan>'name'</font>, <font color=darkcyan>'message_type'</font>), )
+<a name="38">  38</a>            ordering        = [<font color=darkcyan>'name'</font>]
+<a name="39">  39</a>    
+<a name="40">  40</a>        <b>class</b> Admin:
+<a name="41">  41</a>            <b>pass</b>
+<a name="42">  42</a>    
+<a name="43">  43</a>    <b>class</b> Message(models.Model):
+<a name="44">  44</a>        text            = models.TextField()
+<a name="45">  45</a>        subject         = models.CharField(maxlength=250, db_index=True)
+<a name="46">  46</a>        body            = models.TextField()
+<a name="47">  47</a>        message_type    = models.ForeignKey(MessageType)
+<a name="48">  48</a>        source          = models.ForeignKey(Source)
+<a name="49">  49</a>        is_processed    = models.BooleanField()
+<a name="50">  50</a>        is_mailed       = models.BooleanField()
+<a name="51">  51</a>    
+<a name="52">  52</a>        <b>def</b> __str__(<b>self</b>):
+<a name="53">  53</a>            <b>return</b> <font color=darkcyan>"%s"</font> % (<b>self</b>.subject) 
+<a name="54">  54</a>    
+<a name="55">  55</a>        <b>class</b> Meta:
+<a name="56">  56</a>            unique_together = ( (<font color=darkcyan>'subject'</font>, <font color=darkcyan>'source'</font>), ) 
+<a name="57">  57</a>            db_table = <font color=darkcyan>'message'</font>
+<a name="58">  58</a>    
+<a name="59">  59</a>        <b>class</b> Admin:
+<a name="60">  60</a>            <b>pass</b>
+<a name="61">  61</a>    
+<a name="62">  62</a>    <b>class</b> CriteriaType(models.Model):
+<a name="63">  63</a>        INPUT_TYPE_CHOICES = (
+<a name="64">  64</a>                (<font color=darkcyan>'text'</font>, <font color=darkcyan>'text'</font>),
+<a name="65">  65</a>                (<font color=darkcyan>'checkbox'</font>, <font color=darkcyan>'checkbox'</font>),
+<a name="66">  66</a>                (<font color=darkcyan>'radio'</font>, <font color=darkcyan>'radio buttons'</font>),
+<a name="67">  67</a>                (<font color=darkcyan>'select'</font>, <font color=darkcyan>'select dropdown'</font>),
+<a name="68">  68</a>        )
+<a name="69">  69</a>    
+<a name="70">  70</a>        CRITERIA_PREF_TYPE_CHOICES = (
+<a name="71">  71</a>                (<font color=darkcyan>'simple'</font>, <font color=darkcyan>'simple'</font>),
+<a name="72">  72</a>                (<font color=darkcyan>'advanced'</font>,<font color=darkcyan>'advanced'</font>),
+<a name="73">  73</a>        )
+<a name="74">  74</a>    
+<a name="75">  75</a>        name         = models.CharField(maxlength=50, unique=True)
+<a name="76">  76</a>        search_field = models.CharField(maxlength=50)
+<a name="77">  77</a>        desc         = models.TextField(blank=True)
+<a name="78">  78</a>        input_type   = models.CharField(maxlength=50, choices=INPUT_TYPE_CHOICES, radio_admin=True)
+<a name="79">  79</a>        criteria_pref_type = models.CharField(maxlength=50, choices=CRITERIA_PREF_TYPE_CHOICES, radio_admin=True)
+<a name="80">  80</a>    
+<a name="81">  81</a>        <b>def</b> __str__(<b>self</b>):
+<a name="82">  82</a>            <b>return</b> <font color=darkcyan>"%s"</font> % (<b>self</b>.name) 
+<a name="83">  83</a>    
+<a name="84">  84</a>        <b>class</b> Meta:
+<a name="85">  85</a>            db_table = <font color=darkcyan>'criteria_type'</font>
+<a name="86">  86</a>    
+<a name="87">  87</a>        <b>class</b> Admin:
+<a name="88">  88</a>            <b>pass</b>
+<a name="89">  89</a>    
+<a name="90">  90</a>    <b>class</b> CriteriaQualifier(models.Model):
+<a name="91">  91</a>    
+<a name="92">  92</a>        name        = models.CharField(maxlength=50)
+<a name="93">  93</a>        desc        = models.CharField(maxlength=150, blank=True)
+<a name="94">  94</a>        sql         = models.CharField(maxlength=150)
+<a name="95">  95</a>        rose        = models.CharField(maxlength=50)
+<a name="96">  96</a>        rose_sql    = models.CharField(maxlength=50)
+<a name="97">  97</a>    
+<a name="98">  98</a>        <b>def</b> __str__(<b>self</b>):
+<a name="99">  99</a>            <b>return</b> <font color=darkcyan>"%s"</font> % (<b>self</b>.name)
+<a name="100"> 100</a>    
+<a name="101"> 101</a>        <b>class</b> Meta:
+<a name="102"> 102</a>            db_table = <font color=darkcyan>'qualifier'</font>
+<a name="103"> 103</a>    
+<a name="104"> 104</a>        <b>class</b> Admin:
+<a name="105"> 105</a>            <b>pass</b></pre></div></ul><hr><ul><div class="code"><pre><a name="108"> 108</a>    <i><font color=green># Note: I think this model should work, except not sure what to do with 'item' -- maybe split it into 3 different columns,
+</font></i><a name="109"> 109</a>    <i><font color=green>#           user_criteria_id, qualifier_id, connector_id, and only one of them should ever have a value ?
+</font></i><a name="110"> 110</a>    <i><font color=green>#
+</font></i><a name="111"> 111</a>    <i><font color=green># class CriteriaChain(models.Model):
+</font></i><a name="112"> 112</a>    <i><font color=green>#     item        # can be one of user criteria (i.e. one set of "subject contains bleh") or qualifier (contains,is,...) or connector -- '( ) and or' 
+</font></i><a name="113"> 113</a>    <i><font color=green>#     order       # i.e. this is item #7 in the chain
+</font></i><a name="114"> 114</a>    <i><font color=green># 
+</font></i><a name="115"> 115</a>    <i><font color=green># class Connector(models.Model):
+</font></i><a name="116"> 116</a>    <i><font color=green>#     value       # i.e. "( ) and or ..."
+</font></i></pre></div></ul><hr><ul><div class="code"><pre><a name="119"> 119</a>    <b>class</b> UserCriteria(models.Model):
+<a name="120"> 120</a>        user            = models.ForeignKey(User, edit_inline=models.TABULAR)
+<a name="121"> 121</a>        criteria_type   = models.ForeignKey(CriteriaType)
+<a name="122"> 122</a>        qualifier       = models.ForeignKey(CriteriaQualifier)
+<a name="123"> 123</a>        value           = models.CharField(maxlength=50, core=True)
+<a name="124"> 124</a>    
+<a name="125"> 125</a>        <b>def</b> __str__(<b>self</b>):
+<a name="126"> 126</a>            <b>return</b> <font color=darkcyan>"%s"</font> % (<b>self</b>.value) 
+<a name="127"> 127</a>    
+<a name="128"> 128</a>        <b>class</b> Meta:
+<a name="129"> 129</a>            db_table = <font color=darkcyan>'user_criteria'</font>
+<a name="130"> 130</a>    
+<a name="131"> 131</a>    <b>class</b> AlertMethod(models.Model):
+<a name="132"> 132</a>        name        = models.CharField(maxlength=50, unique=True)
+<a name="133"> 133</a>        desc        = models.CharField(maxlength=100)
+<a name="134"> 134</a>        desc_long   = models.TextField(blank=True)
+<a name="135"> 135</a>    
+<a name="136"> 136</a>        <b>def</b> __str__(<b>self</b>):
+<a name="137"> 137</a>            <b>return</b> <font color=darkcyan>"%s"</font> % (<b>self</b>.name) 
+<a name="138"> 138</a>    
+<a name="139"> 139</a>        <b>class</b> Meta:
+<a name="140"> 140</a>            db_table = <font color=darkcyan>'alert_method'</font>
+<a name="141"> 141</a>    
+<a name="142"> 142</a>        <b>class</b> Admin:
+<a name="143"> 143</a>            <b>pass</b>
+<a name="144"> 144</a>    
+<a name="145"> 145</a>    <b>class</b> UserProfile(models.Model):
+<a name="146"> 146</a>        TYPE_CHOICES = (
+<a name="147"> 147</a>                (<font color=darkcyan>'simple'</font>, <font color=darkcyan>'simple'</font>),
+<a name="148"> 148</a>                (<font color=darkcyan>'advanced'</font>, <font color=darkcyan>'advanced'</font>),
+<a name="149"> 149</a>        )
+<a name="150"> 150</a>    
+<a name="151"> 151</a>        user          = models.ForeignKey(User, unique=True, edit_inline=models.TABULAR,
+<a name="152"> 152</a>                        num_in_admin=1,min_num_in_admin=1, max_num_in_admin=1,num_extra_on_change=0)
+<a name="153"> 153</a>        where_heard   = models.CharField(maxlength=250, core=True)
+<a name="154"> 154</a>        criteria_pref_type = models.CharField(maxlength=50, choices=TYPE_CHOICES, radio_admin=True, core=True)
+<a name="155"> 155</a>        sources       = models.ManyToManyField(Source, db_table=<font color=darkcyan>'user_sources'</font>)
+<a name="156"> 156</a>        alert_methods = models.ManyToManyField(AlertMethod, db_table=<font color=darkcyan>'user_alert_methods'</font>)
+<a name="157"> 157</a>        messages      = models.ManyToManyField(Message, db_table=<font color=darkcyan>'user_messages'</font>)
+<a name="158"> 158</a>    
+<a name="159"> 159</a>        <b>def</b> __str__(<b>self</b>):
+<a name="160"> 160</a>            <b>return</b> <font color=darkcyan>"%s"</font> % (<b>self</b>.user.username)
+<a name="161"> 161</a>    
+<a name="162"> 162</a>        <b>class</b> Meta:
+<a name="163"> 163</a>            db_table = <font color=darkcyan>'user_profile'</font></pre></div></ul><hr><ul><div class="code"><pre><a name="168"> 168</a>    <i><font color=green># NOTE: Currently unused
+</font></i><a name="169"> 169</a>    <i><font color=green># class App(models.Model):
+</font></i><a name="170"> 170</a>    <i><font color=green>#     name = models.CharField(maxlength=150, unique=True)
+</font></i><a name="171"> 171</a>    <i><font color=green># 
+</font></i><a name="172"> 172</a>    <i><font color=green>#     def __str__(self):
+</font></i><a name="173"> 173</a>    <i><font color=green>#         return "%s" % (self.name) 
+</font></i><a name="174"> 174</a>    <i><font color=green># 
+</font></i><a name="175"> 175</a>    <i><font color=green>#     class Meta:
+</font></i><a name="176"> 176</a>    <i><font color=green>#         db_table = 'app'
+</font></i><a name="177"> 177</a>    <i><font color=green># 
+</font></i><a name="178"> 178</a>    <i><font color=green># class AppVersion(models.Model):
+</font></i><a name="179"> 179</a>    <i><font color=green>#     app         = models.ForeignKey(App)
+</font></i><a name="180"> 180</a>    <i><font color=green>#     version     = models.CharField(maxlength=50)
+</font></i><a name="181"> 181</a>    <i><font color=green># 
+</font></i><a name="182"> 182</a>    <i><font color=green>#     def __str__(self):
+</font></i><a name="183"> 183</a>    <i><font color=green>#         return "%s, %s" % (self.app, self.version) 
+</font></i><a name="184"> 184</a>    <i><font color=green># 
+</font></i><a name="185"> 185</a>    <i><font color=green>#     class Meta:
+</font></i><a name="186"> 186</a>    <i><font color=green>#         db_table = 'app_version'
+</font></i><a name="187"> 187</a>    <i><font color=green># 
+</font></i><a name="188"> 188</a>    <i><font color=green># class Advisory(models.Model):
+</font></i><a name="189"> 189</a>    <i><font color=green>#     message     = models.ForeignKey(Message)
+</font></i><a name="190"> 190</a>    <i><font color=green>#     app         = models.ForeignKey(App)
+</font></i><a name="191"> 191</a>    <i><font color=green>#     version     = models.CharField(blank=True, maxlength=25)
+</font></i><a name="192"> 192</a>    <i><font color=green>#     text        = models.TextField()
+</font></i><a name="193"> 193</a>    <i><font color=green># 
+</font></i><a name="194"> 194</a>    <i><font color=green>#     def __str__(self):
+</font></i><a name="195"> 195</a>    <i><font color=green>#         return "%s, %s" % (self.app, self.version) 
+</font></i><a name="196"> 196</a>    <i><font color=green># 
+</font></i><a name="197"> 197</a>    <i><font color=green>#     class Meta:
+</font></i><a name="198"> 198</a>    <i><font color=green>#         db_table = 'advisory'
+</font></i></pre></div></ul><hr><ul><div class="code"><pre></pre></div></ul></td></tr></table></body></html><hr><ul><table><tr><td valign=top><table><tr><td valign=top class="xref">Admin</td><td valign=top class="xref"> <a href="#19">19</a>  <a href="#40">40</a>  <a href="#59">59</a>  <a href="#87">87</a>  <a href="#104">104</a>  <a href="#142">142</a> </td></tr>
+<tr><td valign=top class="xref">AlertMethod</td><td valign=top class="xref"> <a href="#131">131</a>  <a href="#156">156</a> </td></tr>
+<tr><td valign=top class="xref">BooleanField</td><td valign=top class="xref"> <a href="#49">49</a>  <a href="#50">50</a> </td></tr>
+<tr><td valign=top class="xref">CRITERIA_PREF_TYPE_CHOICES</td><td valign=top class="xref"> <a href="#70">70</a>  <a href="#79">79</a> </td></tr>
+<tr><td valign=top class="xref">CharField</td><td valign=top class="xref"> <a href="#10">10</a>  <a href="#23">23</a>  <a href="#25">25</a>  <a href="#26">26</a>  <a href="#28">28</a>  <a href="#45">45</a>  <a href="#75">75</a>  <a href="#76">76</a>  <a href="#78">78</a>  <a href="#79">79</a>  <a href="#92">92</a>  <a href="#93">93</a>  <a href="#94">94</a>  <a href="#95">95</a>  <a href="#96">96</a>  <a href="#123">123</a>  <a href="#132">132</a>  <a href="#133">133</a>  <a href="#153">153</a>  <a href="#154">154</a> </td></tr>
+<tr><td valign=top class="xref">CriteriaQualifier</td><td valign=top class="xref"> <a href="#90">90</a>  <a href="#122">122</a> </td></tr>
+<tr><td valign=top class="xref">CriteriaType</td><td valign=top class="xref"> <a href="#62">62</a>  <a href="#121">121</a> </td></tr>
+<tr><td valign=top class="xref">EmailField</td><td valign=top class="xref"> <a href="#24">24</a> </td></tr>
+<tr><td valign=top class="xref">ForeignKey</td><td valign=top class="xref"> <a href="#30">30</a>  <a href="#47">47</a>  <a href="#48">48</a>  <a href="#120">120</a>  <a href="#121">121</a>  <a href="#122">122</a>  <a href="#151">151</a> </td></tr>
+<tr><td valign=top class="xref">INPUT_TYPE_CHOICES</td><td valign=top class="xref"> <a href="#63">63</a>  <a href="#78">78</a> </td></tr>
+<tr><td valign=top class="xref">ManyToManyField</td><td valign=top class="xref"> <a href="#155">155</a>  <a href="#156">156</a>  <a href="#157">157</a> </td></tr>
+<tr><td valign=top class="xref">Message</td><td valign=top class="xref"> <a href="#43">43</a>  <a href="#157">157</a> </td></tr>
+<tr><td valign=top class="xref">MessageType</td><td valign=top class="xref"> <a href="#9">9</a>  <a href="#30">30</a>  <a href="#47">47</a> </td></tr>
+<tr><td valign=top class="xref">Meta</td><td valign=top class="xref"> <a href="#13">13</a>  <a href="#35">35</a>  <a href="#55">55</a>  <a href="#84">84</a>  <a href="#101">101</a>  <a href="#128">128</a>  <a href="#139">139</a>  <a href="#162">162</a> </td></tr>
+<tr><td valign=top class="xref">Model</td><td valign=top class="xref"> <a href="#9">9</a>  <a href="#22">22</a>  <a href="#43">43</a>  <a href="#62">62</a>  <a href="#90">90</a>  <a href="#119">119</a>  <a href="#131">131</a>  <a href="#145">145</a> </td></tr>
+<tr><td valign=top class="xref">Source</td><td valign=top class="xref"> <a href="#22">22</a>  <a href="#48">48</a>  <a href="#155">155</a> </td></tr>
+<tr><td valign=top class="xref">TABULAR</td><td valign=top class="xref"> <a href="#120">120</a>  <a href="#151">151</a> </td></tr>
+<tr><td valign=top class="xref">TYPE_CHOICES</td><td valign=top class="xref"> <a href="#146">146</a>  <a href="#154">154</a> </td></tr>
+<tr><td valign=top class="xref">TextField</td><td valign=top class="xref"> <a href="#11">11</a>  <a href="#29">29</a>  <a href="#44">44</a>  <a href="#46">46</a>  <a href="#77">77</a>  <a href="#134">134</a> </td></tr>
+<tr><td valign=top class="xref">True</td><td valign=top class="xref"> <a href="#10">10</a>  <a href="#27">27</a>  <a href="#28">28</a>  <a href="#29">29</a>  <a href="#45">45</a>  <a href="#75">75</a>  <a href="#77">77</a>  <a href="#78">78</a>  <a href="#79">79</a>  <a href="#93">93</a>  <a href="#123">123</a>  <a href="#132">132</a>  <a href="#134">134</a>  <a href="#151">151</a>  <a href="#153">153</a>  <a href="#154">154</a> </td></tr>
+<tr><td valign=top class="xref">URLField</td><td valign=top class="xref"> <a href="#27">27</a> </td></tr>
+<tr><td valign=top class="xref">User</td><td valign=top class="xref"> <a href="#6">6</a>  <a href="#120">120</a>  <a href="#151">151</a> </td></tr>
+<tr><td valign=top class="xref">UserCriteria</td><td valign=top class="xref"> <a href="#119">119</a> </td></tr>
+<tr><td valign=top class="xref">UserProfile</td><td valign=top class="xref"> <a href="#145">145</a> </td></tr>
+<tr><td valign=top class="xref">__str__</td><td valign=top class="xref"> <a href="#16">16</a>  <a href="#32">32</a>  <a href="#52">52</a>  <a href="#81">81</a>  <a href="#98">98</a>  <a href="#125">125</a>  <a href="#136">136</a>  <a href="#159">159</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">alert_methods</td><td valign=top class="xref"> <a href="#156">156</a> </td></tr>
+<tr><td valign=top class="xref">auth</td><td valign=top class="xref"> <a href="#6">6</a> </td></tr>
+<tr><td valign=top class="xref">blank</td><td valign=top class="xref"> <a href="#27">27</a>  <a href="#28">28</a>  <a href="#29">29</a>  <a href="#77">77</a>  <a href="#93">93</a>  <a href="#134">134</a> </td></tr>
+<tr><td valign=top class="xref">body</td><td valign=top class="xref"> <a href="#46">46</a> </td></tr>
+<tr><td valign=top class="xref">choices</td><td valign=top class="xref"> <a href="#78">78</a>  <a href="#79">79</a>  <a href="#154">154</a> </td></tr>
+<tr><td valign=top class="xref">contrib</td><td valign=top class="xref"> <a href="#6">6</a> </td></tr>
+<tr><td valign=top class="xref">core</td><td valign=top class="xref"> <a href="#123">123</a>  <a href="#153">153</a>  <a href="#154">154</a> </td></tr>
+<tr><td valign=top class="xref">criteria_pref_type</td><td valign=top class="xref"> <a href="#79">79</a>  <a href="#154">154</a> </td></tr>
+<tr><td valign=top class="xref">criteria_type</td><td valign=top class="xref"> <a href="#121">121</a> </td></tr>
+<tr><td valign=top class="xref">db</td><td valign=top class="xref"> <a href="#5">5</a> </td></tr>
+<tr><td valign=top class="xref">db_index</td><td valign=top class="xref"> <a href="#45">45</a> </td></tr>
+<tr><td valign=top class="xref">db_table</td><td valign=top class="xref"> <a href="#14">14</a>  <a href="#36">36</a>  <a href="#57">57</a>  <a href="#85">85</a>  <a href="#102">102</a>  <a href="#129">129</a>  <a href="#140">140</a>  <a href="#155">155</a>  <a href="#156">156</a>  <a href="#157">157</a>  <a href="#163">163</a> </td></tr>
+<tr><td valign=top class="xref">desc</td><td valign=top class="xref"> <a href="#11">11</a>  <a href="#28">28</a>  <a href="#77">77</a>  <a href="#93">93</a>  <a href="#133">133</a> </td></tr>
+<tr><td valign=top class="xref">desc_long</td><td valign=top class="xref"> <a href="#29">29</a>  <a href="#134">134</a> </td></tr>
+<tr><td valign=top class="xref">django</td><td valign=top class="xref"> <a href="#5">5</a>  <a href="#6">6</a> </td></tr>
+<tr><td valign=top class="xref">edit_inline</td><td valign=top class="xref"> <a href="#120">120</a>  <a href="#151">151</a> </td></tr>
+<tr><td valign=top class="xref">email</td><td valign=top class="xref"> <a href="#24">24</a> </td></tr>
+<tr><td valign=top class="xref">email_password</td><td valign=top class="xref"> <a href="#25">25</a> </td></tr>
+<tr><td valign=top class="xref">email_server</td><td valign=top class="xref"> <a href="#26">26</a> </td></tr>
+<tr><td valign=top class="xref">input_type</td><td valign=top class="xref"> <a href="#78">78</a> </td></tr>
+<tr><td valign=top class="xref">is_mailed</td><td valign=top class="xref"> <a href="#50">50</a> </td></tr>
+<tr><td valign=top class="xref">is_processed</td><td valign=top class="xref"> <a href="#49">49</a> </td></tr>
+<tr><td valign=top class="xref">max_num_in_admin</td><td valign=top class="xref"> <a href="#152">152</a> </td></tr>
+<tr><td valign=top class="xref">maxlength</td><td valign=top class="xref"> <a href="#10">10</a>  <a href="#23">23</a>  <a href="#24">24</a>  <a href="#25">25</a>  <a href="#26">26</a>  <a href="#27">27</a>  <a href="#28">28</a>  <a href="#45">45</a>  <a href="#75">75</a>  <a href="#76">76</a>  <a href="#78">78</a>  <a href="#79">79</a>  <a href="#92">92</a>  <a href="#93">93</a>  <a href="#94">94</a>  <a href="#95">95</a>  <a href="#96">96</a>  <a href="#123">123</a>  <a href="#132">132</a>  <a href="#133">133</a>  <a href="#153">153</a>  <a href="#154">154</a> </td></tr>
+<tr><td valign=top class="xref">message_type</td><td valign=top class="xref"> <a href="#30">30</a>  <a href="#47">47</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">messages</td><td valign=top class="xref"> <a href="#157">157</a> </td></tr>
+<tr><td valign=top class="xref">min_num_in_admin</td><td valign=top class="xref"> <a href="#152">152</a> </td></tr>
+<tr><td valign=top class="xref">models</td><td valign=top class="xref"> <a href="#5">5</a>  <a href="#6">6</a>  <a href="#9">9</a>  <a href="#10">10</a>  <a href="#11">11</a>  <a href="#22">22</a>  <a href="#23">23</a>  <a href="#24">24</a>  <a href="#25">25</a>  <a href="#26">26</a>  <a href="#27">27</a>  <a href="#28">28</a>  <a href="#29">29</a>  <a href="#30">30</a>  <a href="#43">43</a>  <a href="#44">44</a>  <a href="#45">45</a>  <a href="#46">46</a>  <a href="#47">47</a>  <a href="#48">48</a>  <a href="#49">49</a>  <a href="#50">50</a>  <a href="#62">62</a>  <a href="#75">75</a>  <a href="#76">76</a>  <a href="#77">77</a>  <a href="#78">78</a>  <a href="#79">79</a>  <a href="#90">90</a>  <a href="#92">92</a>  <a href="#93">93</a>  <a href="#94">94</a>  <a href="#95">95</a>  <a href="#96">96</a>  <a href="#119">119</a>  <a href="#120">120</a>  <a href="#121">121</a>  <a href="#122">122</a>  <a href="#123">123</a>  <a href="#131">131</a>  <a href="#132">132</a>  <a href="#133">133</a>  <a href="#134">134</a>  <a href="#145">145</a>  <a href="#151">151</a>  <a href="#153">153</a>  <a href="#154">154</a>  <a href="#155">155</a>  <a href="#156">156</a>  <a href="#157">157</a> </td></tr>
+<tr><td valign=top class="xref">name</td><td valign=top class="xref"> <a href="#10">10</a>  <a href="#17">17</a>  <a href="#23">23</a>  <a href="#33">33</a>  <a href="#75">75</a>  <a href="#82">82</a>  <a href="#92">92</a>  <a href="#99">99</a>  <a href="#132">132</a>  <a href="#137">137</a> </td></tr>
+<tr><td valign=top class="xref">num_extra_on_change</td><td valign=top class="xref"> <a href="#152">152</a> </td></tr>
+<tr><td valign=top class="xref">num_in_admin</td><td valign=top class="xref"> <a href="#152">152</a> </td></tr>
+<tr><td valign=top class="xref">ordering</td><td valign=top class="xref"> <a href="#38">38</a> </td></tr>
+<tr><td valign=top class="xref">qualifier</td><td valign=top class="xref"> <a href="#122">122</a> </td></tr>
+<tr><td valign=top class="xref">radio_admin</td><td valign=top class="xref"> <a href="#78">78</a>  <a href="#79">79</a>  <a href="#154">154</a> </td></tr>
+<tr><td valign=top class="xref">rose</td><td valign=top class="xref"> <a href="#95">95</a> </td></tr>
+<tr><td valign=top class="xref">rose_sql</td><td valign=top class="xref"> <a href="#96">96</a> </td></tr>
+<tr><td valign=top class="xref">search_field</td><td valign=top class="xref"> <a href="#76">76</a> </td></tr>
+<tr><td valign=top class="xref">source</td><td valign=top class="xref"> <a href="#48">48</a> </td></tr>
+<tr><td valign=top class="xref">sources</td><td valign=top class="xref"> <a href="#155">155</a> </td></tr>
+<tr><td valign=top class="xref">sql</td><td valign=top class="xref"> <a href="#94">94</a> </td></tr>
+<tr><td valign=top class="xref">subject</td><td valign=top class="xref"> <a href="#45">45</a>  <a href="#53">53</a> </td></tr>
+<tr><td valign=top class="xref">text</td><td valign=top class="xref"> <a href="#44">44</a> </td></tr>
+<tr><td valign=top class="xref">unique</td><td valign=top class="xref"> <a href="#10">10</a>  <a href="#75">75</a>  <a href="#132">132</a>  <a href="#151">151</a> </td></tr>
+<tr><td valign=top class="xref">unique_together</td><td valign=top class="xref"> <a href="#37">37</a>  <a href="#56">56</a> </td></tr>
+<tr><td valign=top class="xref">url</td><td valign=top class="xref"> <a href="#27">27</a> </td></tr>
+<tr><td valign=top class="xref">user</td><td valign=top class="xref"> <a href="#120">120</a>  <a href="#151">151</a>  <a href="#160">160</a> </td></tr>
+<tr><td valign=top class="xref">username</td><td valign=top class="xref"> <a href="#160">160</a> </td></tr>
+<tr><td valign=top class="xref">value</td><td valign=top class="xref"> <a href="#123">123</a>  <a href="#126">126</a> </td></tr>
+<tr><td valign=top class="xref">where_heard</td><td valign=top class="xref"> <a href="#153">153</a> </td></tr>
+</table></td></tr></table></ul>

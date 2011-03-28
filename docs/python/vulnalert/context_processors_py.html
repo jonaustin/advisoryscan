@@ -1,0 +1,86 @@
+<html><head><title>./vulnalert/context_processors.py</title>
+<!-- html produced by lpy.py, http://www.danbala.com -->
+<!-- this is the standard header -->
+<style>
+<!--
+a:link { color:blue; text-decoration:none }
+a:visited { color:purple; text-decoration:none }
+a:active { color:red; text-decoration:none }
+a:hover { color:red; text-decoration:none }
+-->
+</style>
+<style>
+<--
+H3 {    /* need this for navigator */
+   font: bold 14pt "Verdana", "Arial", "Helvetica" 
+}
+div.code { 
+    background: #e0e0e0;
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+div.doc { 
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+td.doc { 
+    width:600; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+td.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+table.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+td.splitdoc { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+ }
+td.splitcode { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+-->
+</style>
+</head>
+<body><table><tr><td class="doc"><ul><div class="code"><pre><a name="1">   1</a>    <font color=darkcyan>"""
+        A set of request processors that return dictionaries to be merged into a
+        template context. Each function takes the request object as its only parameter
+        and returns a dictionary to add to the context.
+        
+        These are referenced from the setting TEMPLATE_CONTEXT_PROCESSORS and used by
+        RequestContext.
+        """</font>
+
+<a name="9">   9</a>    
+<a name="10">  10</a>    <b>from</b> vulntracker <b>import</b> settings
+<a name="11">  11</a>    
+<a name="12">  12</a>    <b>def</b> globals ( request ):
+<a name="13">  13</a>        <font color=darkcyan>"""
+            Return context variables that are needed by this app
+            """</font>
+
+<a name="16">  16</a>    
+<a name="17">  17</a>        <i><font color=green>#get criteria_pref_type for cur user
+</font></i><a name="18">  18</a>        <b>if</b> ( request.user.is_authenticated() ):
+<a name="19">  19</a>            user_profile = request.user.get_profile()
+<a name="20">  20</a>            criteria_pref_type = user_profile.criteria_pref_type
+<a name="21">  21</a>        <b>else</b>:
+<a name="22">  22</a>            criteria_pref_type = None
+<a name="23">  23</a>    
+<a name="24">  24</a>        <b>return</b> {
+<a name="25">  25</a>                <font color=darkcyan>'criteria_pref_type'</font>:criteria_pref_type,
+<a name="26">  26</a>                <font color=darkcyan>'site_root'</font>:settings.SITE_ROOT,
+<a name="27">  27</a>                <font color=darkcyan>'site_name'</font>:settings.SITE_NAME,
+<a name="28">  28</a>        }</pre></div></ul></td></tr></table></body></html><hr><ul><table><tr><td valign=top><table><tr><td valign=top class="xref">None</td><td valign=top class="xref"> <a href="#22">22</a> </td></tr>
+<tr><td valign=top class="xref">SITE_NAME</td><td valign=top class="xref"> <a href="#27">27</a> </td></tr>
+<tr><td valign=top class="xref">SITE_ROOT</td><td valign=top class="xref"> <a href="#26">26</a> </td></tr>
+<tr><td valign=top class="xref">criteria_pref_type</td><td valign=top class="xref"> <a href="#20">20</a>  <a href="#22">22</a>  <a href="#25">25</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">get_profile</td><td valign=top class="xref"> <a href="#19">19</a> </td></tr>
+<tr><td valign=top class="xref">globals</td><td valign=top class="xref"> <a href="#12">12</a> </td></tr>
+<tr><td valign=top class="xref">is_authenticated</td><td valign=top class="xref"> <a href="#18">18</a> </td></tr>
+<tr><td valign=top class="xref">request</td><td valign=top class="xref"> <a href="#12">12</a>  <a href="#18">18</a>  <a href="#19">19</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">settings</td><td valign=top class="xref"> <a href="#10">10</a>  <a href="#26">26</a>  <a href="#27">27</a> </td></tr>
+<tr><td valign=top class="xref">user</td><td valign=top class="xref"> <a href="#18">18</a>  <a href="#19">19</a> </td></tr>
+<tr><td valign=top class="xref">user_profile</td><td valign=top class="xref"> <a href="#19">19</a>  <a href="#20">20</a> </td></tr>
+<tr><td valign=top class="xref">vulntracker</td><td valign=top class="xref"> <a href="#10">10</a> </td></tr>
+</table></td></tr></table></ul>

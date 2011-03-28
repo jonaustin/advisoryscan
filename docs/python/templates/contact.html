@@ -1,0 +1,44 @@
+{% extends "base_site.html" %}
+{% load i18n %}
+
+{% block contact_id %}current{% endblock %}
+
+{% block stylesheet %}/media/css/login.css{% endblock %}
+{% block bodyclass %}login{% endblock %}
+{% block content_title %}<h5>Contact:</h5>{% endblock %}
+{% block breadcrumbs %}{% endblock %}
+
+{% block content %}
+
+    {% if message %}
+        <ul class="messagelist"><li> {{ message|escape }} </li></ul>
+    {% endif %}
+
+    {% if error_message %}
+    <p class="errornote"> {{ error_message }} </p>
+    {% endif %}
+
+    <div id="content-main">
+        <form action="" method="POST">
+          <div class="form-row">
+            {{ form.errors.name }}
+            <label for="id_name">Name:</label> <input type="text" name="name" id="id_name" value="{{form_vals.name}}" />
+          </div>
+          <div class="form-row">
+            {{ form.errors.email }}
+            <label for="id_email">Email:</label> <input type="text" name="email" id="id_email" value="{{form_vals.email}}"/>
+          </div>
+          <div class="form-row">
+            {{ form.errors.message }}
+            <label for="id_message">Message:</label> <textarea rows=12 cols=60 name="message" id="id_message" >{{form_vals.message}}</textarea>
+          </div>
+          <div class="submit-row">
+            <label>&nbsp;</label><input type="submit" value="Send Message" />
+          </div>
+        </form>
+
+        <script type="text/javascript">
+        document.getElementById('id_name').focus()
+        </script>
+    </div>
+{% endblock %}

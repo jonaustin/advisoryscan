@@ -1,0 +1,82 @@
+<html><head><title>./vulnalert/urls.py</title>
+<!-- html produced by lpy.py, http://www.danbala.com -->
+<!-- this is the standard header -->
+<style>
+<!--
+a:link { color:blue; text-decoration:none }
+a:visited { color:purple; text-decoration:none }
+a:active { color:red; text-decoration:none }
+a:hover { color:red; text-decoration:none }
+-->
+</style>
+<style>
+<--
+H3 {    /* need this for navigator */
+   font: bold 14pt "Verdana", "Arial", "Helvetica" 
+}
+div.code { 
+    background: #e0e0e0;
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+div.doc { 
+    font: 10pt "Courier New", "Courier", "Monaco" 
+}
+td.doc { 
+    width:600; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+td.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+table.xref { 
+    font: 9pt "Courier New", "Courier", "Monaco" 
+}
+td.splitdoc { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+ }
+td.splitcode { 
+    width:50%; 
+    font: 9pt "Verdana", "Arial", "Helvetica" 
+}
+-->
+</style>
+</head>
+<body><table><tr><td class="doc"><ul><div class="code"><pre><a name="1">   1</a>    <b>from</b> django.conf.urls.defaults <b>import</b> *
+<a name="2">   2</a>    <b>from</b> vulntracker.vulnalert.models <b>import</b> Message
+<a name="3">   3</a>    
+<a name="4">   4</a>    info_dict = { <font color=darkcyan>'queryset'</font> : Message.objects.all() }
+<a name="5">   5</a>    
+<a name="6">   6</a>    urlpatterns = patterns(<font color=darkcyan>''</font>,
+<a name="7">   7</a>        (<font color=darkcyan>r'^$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.index'</font>, {<font color=darkcyan>'template'</font>:<font color=darkcyan>'index.html'</font>}),
+<a name="8">   8</a>        
+<a name="9">   9</a>        (<font color=darkcyan>r'^about/$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.about'</font>, {<font color=darkcyan>'template'</font>:<font color=darkcyan>'about.html'</font>}),
+<a name="10">  10</a>        (<font color=darkcyan>r'^contact/$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.contact'</font>, {<font color=darkcyan>'template'</font>:<font color=darkcyan>'contact.html'</font>}),
+<a name="11">  11</a>        
+<a name="12">  12</a>        (<font color=darkcyan>r'^accounts/signup/$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.signup'</font>, {<font color=darkcyan>'template'</font>:<font color=darkcyan>'signup.html'</font>, <font color=darkcyan>'login_url'</font>:<font color=darkcyan>'/vulntracker/accounts/login'</font>}),
+<a name="13">  13</a>        (<font color=darkcyan>r'^accounts/login/$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.login_form'</font>, {<font color=darkcyan>'template'</font>:<font color=darkcyan>'login.html'</font>, <font color=darkcyan>'next'</font>:<font color=darkcyan>'/vulntracker/accounts/prefs_simple'</font>}),
+<a name="14">  14</a>        (<font color=darkcyan>r'^accounts/logout/$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.logout_view'</font>),
+<a name="15">  15</a>        (<font color=darkcyan>r'^accounts/password_change/$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.password_change'</font>, {<font color=darkcyan>'template'</font>:<font color=darkcyan>'password_change.html'</font>}),
+<a name="16">  16</a>        (<font color=darkcyan>r'^accounts/password_reset/$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.password_reset'</font>, {<font color=darkcyan>'template'</font>:<font color=darkcyan>'password_reset.html'</font>}),
+<a name="17">  17</a>    
+<a name="18">  18</a>        (<font color=darkcyan>r'^accounts/prefs_simple/$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.user_prefs_simple'</font>, {<font color=darkcyan>'template'</font>:<font color=darkcyan>'prefs_simple.html'</font>}),
+<a name="19">  19</a>        (<font color=darkcyan>r'^accounts/prefs_advanced/$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.user_prefs_advanced'</font>, {<font color=darkcyan>'template'</font>:<font color=darkcyan>'prefs_advanced.html'</font>}),
+<a name="20">  20</a>        (<font color=darkcyan>r'^accounts/messages/$'</font>, <font color=darkcyan>'vulntracker.vulnalert.views.user_messages'</font>, {<font color=darkcyan>'template'</font>:<font color=darkcyan>'user_messages.html'</font>}),
+<a name="21">  21</a>        
+<a name="22">  22</a>        (<font color=darkcyan>r'^messages/(?P&lt;object_id>\d+)/$'</font>, <font color=darkcyan>'django.views.generic.list_detail.object_detail'</font>, dict( info_dict, template_name=<font color=darkcyan>'message_detail.html'</font> )),
+<a name="23">  23</a>    )</pre></div></ul></td></tr></table></body></html><hr><ul><table><tr><td valign=top><table><tr><td valign=top class="xref">Message</td><td valign=top class="xref"> <a href="#2">2</a>  <a href="#4">4</a> </td></tr>
+<tr><td valign=top class="xref">all</td><td valign=top class="xref"> <a href="#4">4</a> </td></tr>
+<tr><td valign=top class="xref">conf</td><td valign=top class="xref"> <a href="#1">1</a> </td></tr>
+<tr><td valign=top class="xref">defaults</td><td valign=top class="xref"> <a href="#1">1</a> </td></tr>
+<tr><td valign=top class="xref">dict</td><td valign=top class="xref"> <a href="#22">22</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">django</td><td valign=top class="xref"> <a href="#1">1</a> </td></tr>
+<tr><td valign=top class="xref">info_dict</td><td valign=top class="xref"> <a href="#4">4</a>  <a href="#22">22</a> </td></tr>
+<tr><td valign=top class="xref">models</td><td valign=top class="xref"> <a href="#2">2</a> </td></tr>
+<tr><td valign=top class="xref">objects</td><td valign=top class="xref"> <a href="#4">4</a> </td></tr>
+<tr><td valign=top class="xref">patterns</td><td valign=top class="xref"> <a href="#6">6</a> </td></tr>
+</table></td><td valign=top><table><tr><td valign=top class="xref">template_name</td><td valign=top class="xref"> <a href="#22">22</a> </td></tr>
+<tr><td valign=top class="xref">urlpatterns</td><td valign=top class="xref"> <a href="#6">6</a> </td></tr>
+<tr><td valign=top class="xref">urls</td><td valign=top class="xref"> <a href="#1">1</a> </td></tr>
+<tr><td valign=top class="xref">vulnalert</td><td valign=top class="xref"> <a href="#2">2</a> </td></tr>
+<tr><td valign=top class="xref">vulntracker</td><td valign=top class="xref"> <a href="#2">2</a> </td></tr>
+</table></td></tr></table></ul>
